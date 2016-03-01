@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Денис Корниенко](https://up.htmlacademy.ru/adaptive/6/user/31353).
-* Наставник: `Неизвестно`.
+* Наставник: `Софья Ильинова`.
 
 ---
 
