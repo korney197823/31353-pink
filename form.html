@@ -21,50 +21,72 @@
   </header>
 
     <form class="form-competition" action="#" method="post">
-      <h2 class="form-competition__title">
+      <fieldset>
+        <h2 class="form-competition__title">
         Поделитесь своей историей и получите шанс выйграть ценный приз -
         1000 миль на вашу бонусную карту!
-      </h2>
-      <label class="form-competition__info-label" for="username" >Имя:</label>
-      <input class="form-competition__info-input" type="text" id="username" placeholder="Введите ваше имя">
-      <label class="form-competition__info-label" for="surname">Фамилия:</label>
-      <input class="form-competition__info-input" type="text" id="surname" placeholder="Укажите фамилию">
-      <label class="form-competition__info-label" for="middlename">Отчество:</label>
-      <input class="form-competition__info-input" type="text" id="middlename" placeholder="Ну и отчество тоже">
+        </h2>
+        <label class="form-competition__info-label">Имя:
+          <input class="form-competition__info-input" type="text" placeholder="Введите ваше имя">
+        </label>
+        <label class="form-competition__info-label">Фамилия:
+          <input class="form-competition__info-input" type="text" placeholder="Укажите фамилию">
+        </label>
+        <label class="form-competition__info-label">Отчество:
+          <input class="form-competition__info-input" type="text" placeholder="Ну и отчество тоже">
+        </label>
+      </fieldset>
 
 
-      <h3 class="form-competition__achievement-title">
+      <fieldset>
+        <h3 class="form-competition__achievement-title">
         Ваши безбашенные достижения в путешествии
-      </h3>
-      <input class="form-competition__achievement-input" type="checkbox" id="selfi">
-      <label class="form-competition__achievement-label" for="selfi">Сделал селфи с акулой</label>
-      <input class="form-competition__achievement-input" type="checkbox" id="beach">
-      <label class="form-competition__achievement-label" for="beach">Обгорел на пляже</label>
-      <input class="form-competition__achievement-input" type="checkbox" id="chak">
-      <label class="form-competition__achievement-label" for="chak">Видел Чака Норриса</label>
-      <input class="form-competition__achievement-input" type="checkbox" id="souvenirs">
-      <label class="form-competition__achievement-label" for="souvenirs">Накупил сувениров</label>
-      <input class="form-competition__achievement-input" type="checkbox" id="tower">
-      <label class="form-competition__achievement-label" for="tower">Удержал башню</label>
-      <input class="form-competition__achievement-input" type="checkbox" id="hotel">
-      <label class="form-competition__achievement-label" for="hotel">Разгромил отель</label>
+        </h3>
+        <label class="form-competition__achievement-label">Сделал селфи с акулой
+          <input class="form-competition__achievement-input" type="checkbox">
+        </label>
+        <label class="form-competition__achievement-label">Обгорел на пляже
+          <input class="form-competition__achievement-input" type="checkbox">
+        </label>
+        <label class="form-competition__achievement-label">Видел Чака Норриса
+          <input class="form-competition__achievement-input" type="checkbox">
+        </label>
+        <label class="form-competition__achievement-label">Накупил сувениров
+          <input class="form-competition__achievement-input" type="checkbox">
+        </label>
+        <label class="form-competition__achievement-label">Удержал башню
+          <input class="form-competition__achievement-input" type="checkbox">
+        </label>
+        <label class="form-competition__achievement-label">Разгромил отель
+          <input class="form-competition__achievement-input" type="checkbox">
+        </label>
+      </fieldset>
 
 
-      <label class="form-competition__info-label" for="phone">Номерок телефончика</label>
-      <input class="form-competition__info-input" type="tel" id="phone" placeholder="Номер, пожалуйста">
-      <label class="form-competition__info-label" for="email">Адресок почты</label>
-      <input class="form-competition__info-input" type="email" id="email" placeholder="E-mail, пожалуйста">
+     <fieldset>
+       <label class="form-competition__info-label" for="phone">Номерок телефончика
+         <input class="form-competition__info-input" type="tel" id="phone" placeholder="Номер, пожалуйста">
+       </label>
+       <label class="form-competition__info-label" for="email">Адресок почты
+         <input class="form-competition__info-input" type="email" id="email" placeholder="E-mail, пожалуйста">
+       </label>
+     </fieldset>
 
 
-      <h3 class="form-competition__app-title">
-        С каким приложением путешествовали7
-      </h3>
-      <input class="form-competition__app-input" type="radio" id="ios">
-      <label class="form-competition__app-label" for="ios">Pink для IOS</label>
-      <input class="form-competition__app-input" type="radio" id="android">
-      <label class="form-competition__app-label" for="android">Pink на Android</label>
-      <input class="form-competition__app-input" type="radio" id="windows">
-      <label class="form-competition__app-label" for="windows">Windows Phone</label>
+      <fieldset>
+        <h3 class="form-competition__app-title">
+        С каким приложением путешествовали?
+        </h3>
+        <label class="form-competition__app-label">Pink для IOS
+          <input class="form-competition__app-input" type="radio">
+        </label>
+        <label class="form-competition__app-label" for="android">Pink на Android
+          <input class="form-competition__app-input" type="radio" id="android">
+        </label>
+        <label class="form-competition__app-label">Windows Phone
+          <input class="form-competition__app-input" type="radio">
+        </label>
+      </fieldset>
 
 
       <h3 class="form-competition__emotion-title">
@@ -72,7 +94,7 @@
       </h3>
       <textarea class="form-competition__emotion" name="emotion" id="emotion" cols="30" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
       <input class="button" type="submit" value="Отправить форму">
-      <p><sup>*</sup> - Обязательные поля</p>
+      <p class="form-competition__required-text"><sup class="form-competition__required-star">*</sup> - Обязательные поля</p>
     </form>
 
 
@@ -99,7 +121,7 @@
       Проверьте поля, выделенные красным,
       скорее всего вы забыли их заполнить
     </p>
-    <a href="#" class="button">OK</a>
+    <button class="button">OK</button>
   </section>
 
   <section class="modal">
@@ -111,7 +133,7 @@
       уже поступила к нам. В ближайшее время
       мы рассмотрим ее и оповестим вас.
     </p>
-    <a href="#" class="button">Закрыть окно</a>
+    <button class="button">Закрыть окно</button>
   </section>
 
 </body>

@@ -27,10 +27,10 @@
       Видите, как не хватает ваших?
     </h2>
 
-    <section class="post">
+    <section class="post post--post-of-day">
       <img class="post__img" src="http://lorempixel.com/280/180" alt="panorama">
       <h3 class="post__user">
-        Анна <span>(5 минут назад)</span>
+        Анна <span class="post__user-time">5 минут назад</span>
       </h3>
       <p class="post__text">
         Прыгать или нет? Напишите в комментарии свой совет и смотрите
@@ -42,7 +42,7 @@
     <section class="post">
       <img class="post__img" src="http://lorempixel.com/280/180" alt="car">
       <h3 class="post__user">
-        Левон <span>(5 часов назад)</span>
+        Левон <span class="post__user-time">5 часов назад</span>
       </h3>
       <p class="post__text">
         Вчера он на луну летал, сегодня в руки к нам попал.
@@ -53,7 +53,7 @@
     <section class="post">
       <img class="post__img" src="http://lorempixel.com/280/180" alt="drums">
       <h3 class="post__user">
-        Антон <span>(12 часов назад)</span>
+        Антон <span class="post__user-time">12 часов назад</span>
       </h3>
       <p class="post__text">
         Соседи будут рады!
@@ -64,7 +64,7 @@
     <section class="post">
       <img class="post__img" src="http://lorempixel.com/280/180" alt="windows">
       <h3 class="post__user">
-        Борис <span>(20 часов назад)</span>
+        Борис <span class="post__user-time">20 часов назад</span>
       </h3>
       <p class="post__text">
         Здесь могла быть ваша цитата о высоком и вечном.
@@ -75,7 +75,7 @@
     <section class="post">
       <img class="post__img" src="http://lorempixel.com/280/180" alt="kubana">
       <h3 class="post__user">
-        Сергей <span>(25 часов назад)</span>
+        Сергей <span class="post__user-time">25 часов назад</span>
       </h3>
       <p class="post__text">
         Самая кубанская в мире!
@@ -86,7 +86,7 @@
     <section class="post">
       <img class="post__img" src="http://lorempixel.com/280/180" alt="mountain">
       <h3 class="post__user">
-        Максим <span>(40 часов назад)</span>
+        Максим <span class="post__user-time">40 часов назад</span>
       </h3>
       <p class="post__text">
         Где снег-то?
@@ -97,14 +97,13 @@
     <section class="post">
       <img class="post__img" src="http://lorempixel.com/280/180" alt="air">
       <h3 class="post__user">
-        Надежда <span>(45 часов назад)</span>
+        Надежда <span class="post__user-time">45 часов назад</span>
       </h3>
       <p class="post__text">
         Всем GM и взаимные лайки!
       </p>
       <a href="#" class="post__like">Нравится: 2560</a>
     </section>
-
   </article>
 
 
@@ -116,9 +115,9 @@
     <form class="upload__form" name="upload" method="post" action="#" enctype="multipart/form-data">
       <input class="upload__file" type="file" name="fileup" id="fileup">
        <div class="filter">
-         <div class="filter__size"></div>
-         <div class="filter__color"></div>
-         <div class="filter__bright"></div>
+         <button class="filter__size"></button>
+         <button class="filter__color"></button>
+         <button class="filter__bright"></button>
          <div class="filter__range">
           <div class="filter__scale">
             <div class="filter__bar"></div>
@@ -126,8 +125,8 @@
           <div class="filter__toggle"></div>
         </div>
        </div>
-      <input type="submit" value="Запостить">
-      <input type="reset" value="Отмена">
+      <button class="button" type="submit">Запостить</button>
+      <button class="button" type="reset">Отмена</button>
     </form>
   </section>
 
