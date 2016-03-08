@@ -63,9 +63,9 @@
   <section class="review">
     <div class="review-slider">
       <div class="review-slider__slide">
-        <div class="review-slider__title">
-          <p class="review-slider__name">Николай Петров</p>
-        </div>
+        <h3 class="review-slider__title">
+          Николай Петров
+        </h3>
         <p class="review-slider__text">
           «Это приложение перевернуло мой мир
           и позволило по-новому взглянуть на привычные серые вещи!
@@ -76,34 +76,41 @@
     </div>
   </section>
 
-
-  <section class="price">
-    <table class="plan">
-      <tbody>
-      <tr class="plan__title">
-        <th class="plan__title-item">База</th>
-        <th class="plan__title-item  plan__title-item--hit">Стандарт</th>
-        <th class="plan__title-item">Анлим</th>
-      </tr>
-      <tr class="plan__items">
-        <td class="plan__option  plan__option--included">Розовый фильтр</td>
-        <td class="plan__option  plan__option--included">Розовый фильтр</td>
-        <td class="plan__option  plan__option--included">Розовый фильтр</td>
-      </tr>
-      <tr class="plan__items">
-        <td class="plan__option  plan__option--not-included">Смайлики</td>
-        <td class="plan__option  plan__option--included">Смайлики</td>
-        <td class="plan__option  plan__option--included">Смайлики</td>
-      </tr>
-      <tr class="plan__items">
-        <td class="plan__option  plan__option--not-included">Комментарии</td>
-        <td class="plan__option  plan__option--not-included">Комментарии</td>
-        <td class="plan__option  plan__option--included">Комментарии</td>
-      </tr>
-      </tbody>
-    </table>
-  </section>
-
+  <article class="plans">
+    <section class="plan">
+      <div class="plan__title">
+        <span class="plan__name">База</span>
+        <span class="plan__cost">1,99 USD</span>
+      </div>
+      <ul class="plan__items">
+        <li class="plan__option plan__option--included">Розовый фильтр</li>
+        <li class="plan__option plan__option--not-included">Смайлики</li>
+        <li class="plan__option plan__option--not-included">Комментарии</li>
+      </ul>
+    </section>
+    <section class="plan">
+      <div class="plan__title plan__title--hit">
+        <span class="plan__name">Стандарт</span>
+        <span class="plan__cost">3,99 USD</span>
+      </div>
+      <ul class="plan__items">
+        <li class="plan__option plan__option--included">Розовый фильтр</li>
+        <li class="plan__option plan__option--included">Смайлики</li>
+        <li class="plan__option plan__option--not-included">Комментарии</li>
+      </ul>
+    </section>
+    <section class="plan">
+      <div class="plan__title">
+        <span class="plan__name">Анлим</span>
+        <span class="plan__cost">9,99 USD</span>
+      </div>
+      <ul class="plan__items">
+        <li class="plan__option plan__option--included">Розовый фильтр</li>
+        <li class="plan__option plan__option--included">Смайлики</li>
+        <li class="plan__option plan__option--included">Комментарии</li>
+      </ul>
+    </section>
+  </article>
 
 <footer class="footer-index">
     <div class="contacts">
