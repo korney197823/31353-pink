@@ -20,81 +20,81 @@
     <h1 class="page-header__title">Взгляните на жизнь иначе!</h1>
   </header>
 
-    <form class="form-competition" action="#" method="post">
+    <form class="form" action="#" method="post">
       <fieldset>
-        <h2 class="form-competition__title">
+        <h2 class="form__title">
         Поделитесь своей историей и получите шанс выйграть ценный приз -
         1000 миль на вашу бонусную карту!
         </h2>
-        <label class="form-competition__info-label">Имя:
-          <input class="form-competition__info-input" type="text" placeholder="Введите ваше имя">
+        <label class="form__label">Имя:
+          <input class="form__text" type="text" placeholder="Введите ваше имя">
         </label>
-        <label class="form-competition__info-label">Фамилия:
-          <input class="form-competition__info-input" type="text" placeholder="Укажите фамилию">
+        <label class="form__label">Фамилия:
+          <input class="form__text" type="text" placeholder="Укажите фамилию">
         </label>
-        <label class="form-competition__info-label">Отчество:
-          <input class="form-competition__info-input" type="text" placeholder="Ну и отчество тоже">
+        <label class="form__label">Отчество:
+          <input class="form__text" type="text" placeholder="Ну и отчество тоже">
         </label>
       </fieldset>
 
 
       <fieldset>
-        <h3 class="form-competition__achievement-title">
+        <h3 class="form__subtitle">
         Ваши безбашенные достижения в путешествии
         </h3>
-        <label class="form-competition__achievement-label">Сделал селфи с акулой
-          <input class="form-competition__achievement-input" type="checkbox">
+        <label class="form__label-checkbox">Сделал селфи с акулой
+          <input class="form__checkbox" type="checkbox">
         </label>
-        <label class="form-competition__achievement-label">Обгорел на пляже
-          <input class="form-competition__achievement-input" type="checkbox">
+        <label class="form__label-checkbox">Обгорел на пляже
+          <input class="form__checkbox" type="checkbox">
         </label>
-        <label class="form-competition__achievement-label">Видел Чака Норриса
-          <input class="form-competition__achievement-input" type="checkbox">
+        <label class="form__label-checkbox">Видел Чака Норриса
+          <input class="form__checkbox" type="checkbox">
         </label>
-        <label class="form-competition__achievement-label">Накупил сувениров
-          <input class="form-competition__achievement-input" type="checkbox">
+        <label class="form__label-checkbox">Накупил сувениров
+          <input class="form__checkbox" type="checkbox">
         </label>
-        <label class="form-competition__achievement-label">Удержал башню
-          <input class="form-competition__achievement-input" type="checkbox">
+        <label class="form__label-checkbox">Удержал башню
+          <input class="form__checkbox" type="checkbox">
         </label>
-        <label class="form-competition__achievement-label">Разгромил отель
-          <input class="form-competition__achievement-input" type="checkbox">
+        <label class="form__label-checkbox">Разгромил отель
+          <input class="form__checkbox" type="checkbox">
         </label>
       </fieldset>
 
 
      <fieldset>
-       <label class="form-competition__info-label" for="phone">Номерок телефончика
-         <input class="form-competition__info-input" type="tel" id="phone" placeholder="Номер, пожалуйста">
+       <label class="form__label" for="phone">Номерок телефончика
+         <input class="form__text" type="tel" id="phone" placeholder="Номер, пожалуйста">
        </label>
-       <label class="form-competition__info-label" for="email">Адресок почты
-         <input class="form-competition__info-input" type="email" id="email" placeholder="E-mail, пожалуйста">
+       <label class="form__label" for="email">Адресок почты
+         <input class="form__text" type="email" id="email" placeholder="E-mail, пожалуйста">
        </label>
      </fieldset>
 
 
       <fieldset>
-        <h3 class="form-competition__app-title">
+        <h3 class="form__subtitle">
         С каким приложением путешествовали?
         </h3>
-        <label class="form-competition__app-label">Pink для IOS
-          <input class="form-competition__app-input" type="radio">
+        <label class="form__label-radio">Pink для IOS
+          <input class="form__radio" type="radio">
         </label>
-        <label class="form-competition__app-label" for="android">Pink на Android
-          <input class="form-competition__app-input" type="radio" id="android">
+        <label class="form__label-radio" for="android">Pink на Android
+          <input class="form__radio" type="radio" id="android">
         </label>
-        <label class="form-competition__app-label">Windows Phone
-          <input class="form-competition__app-input" type="radio">
+        <label class="form__label-radio">Windows Phone
+          <input class="form__radio" type="radio">
         </label>
       </fieldset>
 
 
-      <h3 class="form-competition__emotion-title">
+      <h3 class="form__subtitle">
         Опишите свои эмоции
       </h3>
-      <textarea class="form-competition__emotion" name="emotion" id="emotion" cols="30" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+      <textarea class="form__textarea" name="emotion" id="emotion" cols="30" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
       <input class="button" type="submit" value="Отправить форму">
-      <p class="form-competition__required-text"><sup class="form-competition__required-star">*</sup> - Обязательные поля</p>
+      <p class="form__required-text"><sup class="form__required-star">*</sup> - Обязательные поля</p>
     </form>
 
 
@@ -121,7 +121,7 @@
       Проверьте поля, выделенные красным,
       скорее всего вы забыли их заполнить
     </p>
-    <button class="button">OK</button>
+    <button class="button" type="button" >OK</button>
   </section>
 
   <section class="modal">
@@ -133,7 +133,7 @@
       уже поступила к нам. В ближайшее время
       мы рассмотрим ее и оповестим вас.
     </p>
-    <button class="button">Закрыть окно</button>
+    <button class="button" type="button">Закрыть окно</button>
   </section>
 
 </body>
