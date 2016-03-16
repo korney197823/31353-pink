@@ -1,0 +1,21 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0;
+  font-family: $font;
+  font-size: $font-normal;
+  line-height: $height-normal;
+  @media ($tablet-width) {
+    width: 700px;
+  }
+  @media ($desktop-width) {
+    width: 1200px;
+  }
+}
+

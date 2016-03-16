@@ -1,0 +1,14 @@
+.social-footer {
+  display: none;
+  @media ($tablet-width) {
+    display: block;
+  }
+  &__wrap {
+    @include container;
+    @include clearfix;
+  }
+  &__logo {
+    width: 150px;
+    float: left;
+  }
+}

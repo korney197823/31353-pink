@@ -1,0 +1,15 @@
+.review {
+  &__wrap {
+    @include container;
+    @media ($mobile-width-only) {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+  padding-top: 40px;
+  margin-bottom: 110px;
+  @media ($tablet-width) {
+    margin-bottom: 50px;
+    padding-top: 75px;
+  }
+}

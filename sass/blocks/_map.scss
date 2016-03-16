@@ -1,0 +1,7 @@
+.map {
+  height: 200px;
+  background-color: $gray;
+  @media ($tablet-width) {
+    height: 380px;
+  }
+}

@@ -1,1 +1,21 @@
+.navigation{
+  display: none;
+  background-color: $darkblue;
+  //display: flex;
+  //flex-direction: column;
+  &__toggle {
+  }
+  &__link {
+    display: block;
+    padding: 16px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: $font;
+    font-size: $font-normal;
+    font-weight: bold;
+    line-height: $height-big + 2px;
+    color: #fff;
+  }
 
+}

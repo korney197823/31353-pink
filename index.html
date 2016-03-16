@@ -2,24 +2,28 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
   <title>Пинк</title>
 </head>
 <body>
 
-
-  <header class="page-header">
+<header class="page-header">
+  <div class="page-header__nav">
     <div class="page-header__nav-wrap">
       <div class="logo">
-        <a class="logo__link" href="#">PINK</a>
+        <a class="logo__link" href="#">LINK</a>
       </div>
-      <nav class="navigation">
+      <nav class="navigation ">
+        <span class="navigation__toggle navigation__toggle--closed"></span>
         <a href="index.html" class="navigation__link">Главная</a>
         <a href="photo.html" class="navigation__link">Фотографии</a>
         <a href="form.html" class="navigation__link">Конкурс</a>
         <a href="https://htmlacademy.ru/" class="navigation__link">HTML Academy</a>
       </nav>
     </div>
+  </div>
+  <div class="page-header__app-wrap">
     <h1 class="page-header__title">Взгляните на жизнь иначе!</h1>
     <section class="download-app">
       <a href="#" class="button">Скачать приложение</a>
@@ -28,51 +32,78 @@
         <li class="download-app__item"><a href="#" class="download-app__link">Android</a></li>
         <li class="download-app__item"><a href="#" class="download-app__link">Windows</a></li>
       </ul>
-      <p class="download-app__description">Доступно для IPhone, Android, Windows phone, Mac OS, Windows 8</p>
+      <p class="download-app__description">Доступно для IPhone, IPad, Android, Windows phone, OS X, Windows 8</p>
     </section>
-  </header>
+  </div>
+</header>
 
 
   <section class="features">
-      <h2 class="features__title">Устали от серости мегаполиса? Нам есть, что вам предложить!</h2>
-        <section class="feature">
-          <h3 class="feature__subtitle">Поднимает настроение</h3>
-          <p class="feature__text">
-            Приложение позволит вам победить
-            осеннюю хандру и депрессию
-            буквально в несколько кликов!
-          </p>
-        </section>
-        <section class="feature">
-          <h3 class="feature__subtitle">Меняет мир вокруг</h3>
-          <p class="feature__text">
-            Сделайте снимок и украсте его смайликом
-            или текстовой подпистью, чтобы усилить эффект
-          </p>
-        </section>
-        <section class="feature">
-          <h3 class="feature__subtitle">Заводит новых друзей</h3>
-          <p class="feature__text">
-            Ставьте лайки, комментируйте, делитесь
-            фотографиями с друзьями и заводите новых
-          </p>
-        </section>
-        <img src="http://lorempixel.com/160/290" alt="pinkphoto" class="features__img">
+    <div class="features__wrap-title">
+      <h2 class="features__title">Устали от серости мегаполиса?</h2>
+      <h2 class="features__title">Нам есть, что вам предложить!</h2>
+    </div>
+    <div class="features__group">
+      <div class="features__wrap">
+        <div class="feature__wrap">
+          <section class="feature">
+            <h3 class="feature__subtitle">Поднимает настроение</h3>
+            <p class="feature__text">
+              Приложение позволит вам победить
+              осеннюю хандру и депрессию
+              буквально в несколько кликов!
+            </p>
+          </section>
+          <section class="feature">
+            <h3 class="feature__subtitle">Меняет мир вокруг</h3>
+            <p class="feature__text">
+              Сделайте снимок и украсте его смайликом
+              или текстовой подпистью, чтобы усилить эффект
+            </p>
+          </section>
+          <section class="feature">
+            <h3 class="feature__subtitle">Заводит новых друзей</h3>
+            <p class="feature__text">
+              Ставьте лайки, комментируйте, делитесь
+              фотографиями с друзьями и заводите
+              новых
+            </p>
+          </section>
+        </div>
+        <div class="features__img-wrap">
+            <!--<img src="img/iphone-screen-mobile.png" alt="pinkphoto" class="features__img">-->
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="research">
+    <div class="research__wrap">
+      <div class="research__time">24</div>
+      <h3 class="research__title">Эффект<br> на 24 часа!</h3>
+      <p class="research__text">
+        Британские ученые провели исследования и доказали,
+       что положительный эффект от использования приложения длится целые сутки!
+      </p>
+      <a href="#" class="research__link">Узнать больше об исследовании</a>
+    </div>
   </section>
 
 
   <section class="review">
-    <div class="review-slider">
-      <div class="review-slider__slide">
-        <h3 class="review-slider__title">
-          Николай Петров
-        </h3>
-        <p class="review-slider__text">
-          «Это приложение перевернуло мой мир
-          и позволило по-новому взглянуть на привычные серые вещи!
-          А еще я познакомился со своей будующей женой в комментариях
-          к выложенной фотографии!»
-        </p>
+    <div class="review__wrap">
+      <div class="review-slider">
+        <div class="review-slider__slide">
+          <h3 class="review-slider__title">
+            Николай Петров<span class="review-slider__title-person">25 лет, водитель трамвая</span>
+          </h3>
+          <p class="review-slider__text">
+            «Это приложение перевернуло мой мир
+            и позволило по-новому взглянуть на привычные серые вещи!
+            А еще я познакомился со своей будующей женой в комментариях
+            к выложенной фотографии!»
+          </p>
+        </div>
       </div>
     </div>
   </section>
@@ -114,10 +145,10 @@
   </article>
 
 <footer class="footer-index">
-    <div class="contacts">
-      <h2 class="contacts__title">
-        Остались вопросы? Свяжитесь с нами!
-      </h2>
+  <div class="contacts">
+    <div class="contacts__wrap"><h2 class="contacts__title">
+      Остались вопросы? Свяжитесь с нами!
+    </h2>
       <div class="contacts__call">
         <h3 class="contacts__subtitle">Звоните:</h3>
         <a class="contacts__phone" href="tel:+78125556666">+7&thinsp;(812)&thinsp;555-66-66</a>
@@ -128,10 +159,27 @@
       </div>
       <div class="contacts__address">
         <h3 class="contacts__subtitle">Приезжайте в гости:</h3>
-        <p class="contacts__text">Ул. Большая Конюшенная, 19/8</p>
+        <p class="contacts__text">ул. Большая<br> Конюшенная, 19/8</p>
       </div>
     </div>
-    <div class="map">
+  </div>
+  <div class="map">
+  </div>
+  </footer>
+  <footer class="social-footer">
+    <div class="social-footer__wrap">
+      <div class="social-footer__logo">
+        <a href="" class="social-footer__logo-link">PINK</a>
+      </div>
+      <div class="social">
+        <a href="#" class="social__icon">Twitter</a>
+        <a href="#" class="social__icon">Facebook</a>
+        <a href="#" class="social__icon">Youtube</a>
+      </div>
+      <div class="developer">
+        <span class="developer__text">Разработано</span>
+        <a href="#" class="developer__logo">HTML Academy</a>
+      </div>
     </div>
   </footer>
 </body>

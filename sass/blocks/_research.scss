@@ -1,0 +1,37 @@
+.research {
+  display: none;
+  @media ($tablet-width) {
+    display: block;
+  }
+  &__wrap {
+    @include container;
+    @include clearfix;
+  }
+  &__time {
+    width: 310px;
+    height: 280px;
+    float: left;
+  }
+  &__title {
+    margin: 0;
+    padding-top: 100px;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 36px;
+  }
+  &__text {
+    margin: 0;
+    padding-top: 10px;
+    font-size: $font-small;
+    line-height: $height-normal;
+  }
+  &__link {
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    font-size: $font-small;
+    line-height: $height-normal;
+    color: $pink;
+  }
+}

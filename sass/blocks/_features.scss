@@ -1,0 +1,57 @@
+.features {
+  &__group {
+    background-color: $gray;
+  }
+  &__wrap-title {
+    @include container-fluid;
+    @media ($mobile-width-only) {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+  &__wrap {
+    @include container-fluid;
+    @include clearfix;
+    @media ($mobile-width-only) {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+  &__title {
+    padding-top: 40px;
+    margin: 0;
+    text-align: center;
+    font-weight: 300;
+    font-size: $font-big;
+    line-height: $height-big;
+    color: $darkblue;
+    @media ($tablet-width) {
+      padding-top: 60px;
+      font-size: 40px;
+    }
+  }
+  &__title:last-of-type {
+    padding-top: 26px;
+    padding-bottom: 63px;
+    @media ($tablet-width) {
+      width: 350px;
+      margin: 0 auto;
+      padding-top: 8px;
+      padding-bottom: 45px;
+      line-height: 48px;
+    }
+  }
+  &__img-wrap {
+    margin: 0 auto;
+    margin-top: 40px;
+    width: 160px;
+    height: 280px;
+    background: url("../../img/iphone-screen-mobile.png") no-repeat;
+    @media ($tablet-width) {
+      float: left;
+      width: 300px;
+      margin-top: 45px;
+    }
+  }
+
+}

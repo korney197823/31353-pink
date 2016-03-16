@@ -1,0 +1,38 @@
+
+.page-header {
+  background: url("../../img/bg-back-mobile.jpg");
+  position: relative;
+  &__nav {
+    min-height: 66px;
+    background-color: darkorange;
+    @media ($tablet-width) {
+      min-height: 110px;
+    }
+  }
+  &__nav-wrap {
+    @include container-fluid;
+  }
+  &__app-wrap {
+    @include container-fluid;
+  }
+  &__title {
+    display: none;
+    margin: 0;
+    text-align: center;
+    line-height: 50px;
+    font-size: 40px;
+    font-weight: 300;
+    color: $white;
+    @media ($tablet-width) {
+      display: block;
+      width: 250px;
+      padding-left: 50px;
+      padding-top: 40px;
+      margin-top: 50px;
+    }
+  }
+}
+
+
+
+
