@@ -1,49 +1,53 @@
 .download-app {
   background-color: $darkblue;
   margin-top: 390px;
-  padding-top: 25px;
+  padding-top: 30px;
   @media ($mobile-width-only) {
     padding-left: 20px;
     padding-right: 20px;
   }
   @media ($tablet-width) {
-    margin-top: 0;
-    padding-bottom: 107px;
     width: 300px;
-    padding-top: 25px;
-  }
-  .button {
-    display: block;
-    padding: 20px;
-    margin-bottom: 30px;
-    text-align: center;
-    text-decoration: none;
-    font-family: $font;
-    font-size: $font-normal;
-    font-weight: bold;
-    color: $white;
-    line-height: $height-small;
-  }
-  &__list {
-    margin: 0;
-    margin-bottom: 20px;
     padding: 0;
+    margin-top: 0;
+    margin-bottom: 107px;
+  }
+  @media ($desktop-width) {
+    margin-bottom: 125px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
     text-decoration: none;
     text-align: center;
     font-size: 0;
+    margin-bottom: 20px;
     @media ($tablet-width) {
       margin-bottom: 50px;
     }
+    @media ($desktop-width) {
+      margin-bottom: 55px;
+    }
   }
+
   &__item {
     width: 60px;
     height: 60px;
     display: inline-block;
     vertical-align: top;
+    background: url("../../img/logo-apple.svg") no-repeat;
+    &:nth-of-type(2) {
+      background: url("../../img/logo-android.svg") no-repeat;
+    }
+    &:nth-of-type(3) {
+      background: url("../../img/logo-microsoft.svg") no-repeat;
+    }
   }
   &__link {
-    font-family: $font;
-    font-size: $font-normal;
+
   }
   &__description {
     margin: 0;

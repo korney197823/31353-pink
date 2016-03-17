@@ -1,0 +1,19 @@
+.button {
+  display: block;
+  padding: 16px 20px;
+  margin-bottom: 30px;
+  border: 3px solid $white;
+  border-radius: 30px;
+  text-align: center;
+  text-decoration: none;
+  font-family: $font;
+  font-size: $font-normal;
+  font-weight: bold;
+  color: $white;
+  line-height: $height-small;
+  @media ($desktop-width) {
+    margin-bottom: 60px;
+    font-size: 21px;
+    font-weight: bold;
+  }
+}

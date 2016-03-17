@@ -1,9 +1,17 @@
 .navigation{
   display: none;
   background-color: $darkblue;
-  //display: flex;
-  //flex-direction: column;
+  @media ($desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+  }
+
   &__toggle {
+    @media ($desktop-width) {
+      display: none;
+
+    }
   }
   &__link {
     display: block;
@@ -16,6 +24,12 @@
     font-weight: bold;
     line-height: $height-big + 2px;
     color: #fff;
+    @media ($desktop-width) {
+      padding: 0;
+      font-weight: normal;
+      line-height: $height-small;
+      text-transform: none;
+    }
   }
 
 }
