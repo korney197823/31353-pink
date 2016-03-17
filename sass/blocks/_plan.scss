@@ -1,42 +1,48 @@
 .plan {
   background-color: $white;
-  .plan__title {
-    width: 280px;
-    padding: 20px 0;
-    border-left: 2px solid $gray;
-    background-color: $darkblue;
-  }
-  .plan__name {
-    display: block;
-    margin: 0 auto;
-    text-align: center;
-    font-size: $font-normal;
-    font-weight: bold;
-    line-height: $height-big;
-    text-transform: uppercase;
-    color: $white;
-  }
-  .plan__cost {
-    display: block;
-    margin: 0 auto;
-    text-align: center;
-    font-size: $font-big;
-    font-weight: 300;
-    color: $white;
-  }
-  .plan__items {
-    width: 280px;
-    margin: 0;
-    padding: 0;
-  }
-  .plan__option {
-    width: 280px;
-    padding: 15px 20px;
-    list-style-type: none;
-    border-bottom: 2px solid $gray;
-    text-transform: uppercase;
-    font-size: $font-small;
-    line-height: $height-big;
-
-  }
 }
+
+.plan__title {
+  width: 280px;
+  padding: 20px 0;
+  border-left: 2px solid $gray;
+  background-color: $darkblue;
+}
+
+.plan__name {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  font-size: $font-normal;
+  font-weight: bold;
+  line-height: $height-big;
+  text-transform: uppercase;
+  color: $white;
+}
+
+.plan__cost {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  font-size: $font-big;
+  font-weight: 300;
+  color: $white;
+}
+
+.plan__items {
+  width: 280px;
+  margin: 0;
+  padding: 0;
+}
+
+.plan__option {
+  width: 280px;
+  padding: 15px 20px;
+  list-style-type: none;
+  border-bottom: 2px solid $gray;
+  text-transform: uppercase;
+  font-size: $font-small;
+  line-height: $height-big;
+
+}
+

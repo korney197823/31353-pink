@@ -6,62 +6,71 @@
   @media ($desktop-width) {
     background-color: $gray;
   }
-  .research__wrap {
-    @include container-fluid;
-    @media ($tablet-width) {
-      display: flex;
-      padding-bottom: 50px;
-    }
-    @media ($desktop-width) {
-      padding-bottom: 112px;
-    }
+}
+
+.research__wrap {
+  @include container-fluid;
+  @media ($tablet-width) {
+    display: flex;
+    padding-bottom: 50px;
   }
-  .research__time {
-    width: 50%;
-    @media ($desktop-width) {
-      width: 39%;
-    };
-  }
-  .research__wrap-description {
-    width: 50%;
-    @media ($desktop-width) {
-      width: 61%;
-    }
-  }
-  .research__title {
-    margin: 0;
-    margin-top: 100px;
-    font-size: 30px;
-    font-weight: bold;
-    line-height: 36px;
-    @media ($desktop-width) {
-      margin-top: 122px;
-      & br {
-        display: none;
-      }
-    };
-  }
-  .research__text {
-    margin: 0;
-    margin-top: 10px;
-    font-size: $font-small;
-    line-height: $height-normal;
-    @media ($desktop-width) {
-      margin-top: 22px;
-      font-size: $font-normal;
-      line-height: $height-big;
-    }
-  }
-  .research__link {
-    display: block;
-    margin-top: 10px;
-    font-size: $font-small;
-    line-height: $height-normal;
-    color: $pink;
-    @media ($desktop-width) {
-      margin-top: 30px;
-      font-size: $font-normal;
-      line-height: $height-big;
-    }
+  @media ($desktop-width) {
+    padding-bottom: 112px;
   }
 }
+
+.research__time {
+  width: 50%;
+  @media ($desktop-width) {
+    width: 39%;
+  }
+;
+}
+
+.research__wrap-description {
+  width: 50%;
+  @media ($desktop-width) {
+    width: 61%;
+  }
+}
+
+.research__title {
+  margin: 0;
+  margin-top: 100px;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 36px;
+  @media ($desktop-width) {
+    margin-top: 122px;
+    & br {
+      display: none;
+    }
+  }
+;
+}
+
+.research__text {
+  margin: 0;
+  margin-top: 10px;
+  font-size: $font-small;
+  line-height: $height-normal;
+  @media ($desktop-width) {
+    margin-top: 22px;
+    font-size: $font-normal;
+    line-height: $height-big;
+  }
+}
+
+.research__link {
+  display: block;
+  margin-top: 10px;
+  font-size: $font-small;
+  line-height: $height-normal;
+  color: $pink;
+  @media ($desktop-width) {
+    margin-top: 30px;
+    font-size: $font-normal;
+    line-height: $height-big;
+  }
+}
+

@@ -1,50 +1,55 @@
 .review-slider {
-  .review-slider__slide {
-    @media ($tablet-width) {
-      display: flex;
-      flex-direction: column-reverse;
-      align-items: center;
-    }
-  }
-  .review-slider__title {
-    margin:0;
-    margin-bottom: 15px;
-    text-align: center;
-    font-size: $font-normal;
-    font-weight: bold;
-    line-height: $height-big;
-    color: $darkblue;
-    @media ($tablet-width) {
-      font-size: $font-normal + 2px;
-      padding-top: 34px;
-    }
-    @media ($desktop-width) {
-      font-size: $font-big;
-    }
-  }
-  .review-slider__title-person {
-    display: none;
-    font-size: $font-small;
-    font-weight: normal;
-    @media ($tablet-width) {
-      display: block;
-      line-height: $height-big;
-      padding-top: 2px;
-    }
-    @media ($desktop-width) {
-      font-size: $font-normal;
-    }
-  }
-  .review-slider__text {
-    margin: 0;
-    text-align: center;
-    font-size: $font-small;
-    line-height: $height-big;
-    @media ($tablet-width) {
-      font-size: $font-normal;
-    }
-    @media ($desktop-width) {
-      width: 80%;
-    }
+}
+
+.review-slider__slide {
+  @media ($tablet-width) {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
   }
 }
+
+.review-slider__title {
+  margin: 0;
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: $font-normal;
+  font-weight: bold;
+  line-height: $height-big;
+  color: $darkblue;
+  @media ($tablet-width) {
+    font-size: $font-normal + 2px;
+    padding-top: 34px;
+  }
+  @media ($desktop-width) {
+    font-size: $font-big;
+  }
+}
+
+.review-slider__title-person {
+  display: none;
+  font-size: $font-small;
+  font-weight: normal;
+  @media ($tablet-width) {
+    display: block;
+    line-height: $height-big;
+    padding-top: 2px;
+  }
+  @media ($desktop-width) {
+    font-size: $font-normal;
+  }
+}
+
+.review-slider__text {
+  margin: 0;
+  text-align: center;
+  font-size: $font-small;
+  line-height: $height-big;
+  @media ($tablet-width) {
+    font-size: $font-normal;
+  }
+  @media ($desktop-width) {
+    width: 80%;
+  }
+}
+

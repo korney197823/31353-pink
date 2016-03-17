@@ -15,55 +15,58 @@
   @media ($desktop-width) {
     margin-bottom: 125px;
   }
+}
 
-  .download-app__list {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 0;
-    text-decoration: none;
-    text-align: center;
-    font-size: 0;
-    margin-bottom: 20px;
-    @media ($tablet-width) {
-      margin-bottom: 50px;
-    }
-    @media ($desktop-width) {
-      margin-bottom: 55px;
-    }
+.download-app__list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0;
+  text-decoration: none;
+  text-align: center;
+  font-size: 0;
+  margin-bottom: 20px;
+  @media ($tablet-width) {
+    margin-bottom: 50px;
   }
+  @media ($desktop-width) {
+    margin-bottom: 55px;
+  }
+}
 
-  .download-app__item {
-    width: 60px;
-    height: 60px;
-    display: inline-block;
-    vertical-align: top;
-    background: url("../../img/logo-apple.svg") no-repeat;
-    &:nth-of-type(2) {
-      background: url("../../img/logo-android.svg") no-repeat;
-    }
-    &:nth-of-type(3) {
-      background: url("../../img/logo-microsoft.svg") no-repeat;
-    }
+.download-app__item {
+  width: 60px;
+  height: 60px;
+  display: inline-block;
+  vertical-align: top;
+  background: url("../../img/logo-apple.svg") no-repeat;
+  &:nth-of-type(2) {
+    background: url("../../img/logo-android.svg") no-repeat;
   }
-  .download-app__link {
+  &:nth-of-type(3) {
+    background: url("../../img/logo-microsoft.svg") no-repeat;
+  }
+}
 
-  }
-  .download-app__description {
-    margin: 0;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 30px;
-    text-align: center;
-    font-family: $font;
-    font-size: $font-small;
-    font-weight: 300;
-    line-height: $height-normal;
-    color: $white;
-    @media ($tablet-width) {
-      padding: 0;
-      font-size: $font-normal;
-    }
-  }
+.download-app__link {
 
 }
+
+.download-app__description {
+  margin: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 30px;
+  text-align: center;
+  font-family: $font;
+  font-size: $font-small;
+  font-weight: 300;
+  line-height: $height-normal;
+  color: $white;
+  @media ($tablet-width) {
+    padding: 0;
+    font-size: $font-normal;
+  }
+}
+
+
