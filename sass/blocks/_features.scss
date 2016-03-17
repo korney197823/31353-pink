@@ -1,8 +1,8 @@
 .features {
-  &__group {
+  .features__group {
     background-color: $gray;
   }
-  &__wrap-title {
+  .features__wrap-title {
     @include container-fluid;
     @media ($mobile-width-only) {
       padding-left: 20px;
@@ -12,7 +12,7 @@
       margin-bottom: 37px;
     }
   }
-  &__wrap {
+  .features__wrap {
     @include container-fluid;
     @media ($mobile-width-only) {
       padding-left: 20px;
@@ -27,7 +27,7 @@
       flex-direction: column-reverse;
     }
   }
-  &__title {
+  .features__title {
     padding-top: 40px;
     margin: 0;
     text-align: center;
@@ -43,13 +43,13 @@
       font-size: 50px;
     }
   }
-  &__title:first-of-type {
+  .features__title:first-of-type {
     @media ($desktop-width) {
       padding-top: 82px;
     }
 
   }
-  &__title:last-of-type {
+  .features__title:last-of-type {
     padding-top: 26px;
     padding-bottom: 63px;
     @media ($tablet-width) {
@@ -65,7 +65,7 @@
       line-height: 56px;
     }
   }
-  &__img-wrap {
+  .features__img-wrap {
     margin: 0 auto;
     margin-top: 40px;
     width: 160px;

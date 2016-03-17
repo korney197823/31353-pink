@@ -1,12 +1,12 @@
 .review-slider {
-  &__slide {
+  .review-slider__slide {
     @media ($tablet-width) {
       display: flex;
       flex-direction: column-reverse;
       align-items: center;
     }
   }
-  &__title {
+  .review-slider__title {
     margin:0;
     margin-bottom: 15px;
     text-align: center;
@@ -22,7 +22,7 @@
       font-size: $font-big;
     }
   }
-  &__title-person {
+  .review-slider__title-person {
     display: none;
     font-size: $font-small;
     font-weight: normal;
@@ -35,7 +35,7 @@
       font-size: $font-normal;
     }
   }
-  &__text {
+  .review-slider__text {
     margin: 0;
     text-align: center;
     font-size: $font-small;

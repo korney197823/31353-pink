@@ -3,14 +3,14 @@
   @media ($tablet-width) {
     display: block;
   }
-  &__wrap {
+  .social-footer__wrap {
     @include container-fluid;
     min-height: 128px;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-  &__logo {
+  .social-footer__logo {
     width: 33%;
   }
 }

@@ -7,13 +7,13 @@
     flex-grow: 1;
   }
 
-  &__toggle {
+  .navigation__toggle {
     @media ($desktop-width) {
       display: none;
 
     }
   }
-  &__link {
+  .navigation__link {
     display: block;
     padding: 16px;
     text-align: center;

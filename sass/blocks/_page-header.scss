@@ -2,7 +2,7 @@
 .page-header {
   background: url("../../img/bg-back-mobile.jpg");
   position: relative;
-  &__nav {
+  .page-header__nav {
     background-color: darkorange;
     @media ($tablet-width) {
       margin-bottom: 92px;
@@ -11,7 +11,7 @@
       margin-bottom: 110px;
     }
   }
-  &__nav-wrap {
+  .page-header__nav-wrap {
     @include container-fluid;
     min-height: 66px;
     @media ($tablet-width) {
@@ -23,7 +23,7 @@
       align-items: center;
     }
   }
-  &__app-wrap {
+  .page-header__app-wrap {
     @include container-fluid;
     @media ($tablet-width) {
       display: flex;
@@ -31,7 +31,7 @@
       align-items: flex-start;
     }
   }
-  &__title {
+  .page-header__title {
     display: none;
     margin: 0;
     text-align: center;

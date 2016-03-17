@@ -6,7 +6,7 @@
   @media ($desktop-width) {
     background-color: $gray;
   }
-  &__wrap {
+  .research__wrap {
     @include container-fluid;
     @media ($tablet-width) {
       display: flex;
@@ -16,19 +16,19 @@
       padding-bottom: 112px;
     }
   }
-  &__time {
+  .research__time {
     width: 50%;
     @media ($desktop-width) {
       width: 39%;
     };
   }
-  &__wrap-description {
+  .research__wrap-description {
     width: 50%;
     @media ($desktop-width) {
       width: 61%;
     }
   }
-  &__title {
+  .research__title {
     margin: 0;
     margin-top: 100px;
     font-size: 30px;
@@ -41,7 +41,7 @@
       }
     };
   }
-  &__text {
+  .research__text {
     margin: 0;
     margin-top: 10px;
     font-size: $font-small;
@@ -52,7 +52,7 @@
       line-height: $height-big;
     }
   }
-  &__link {
+  .research__link {
     display: block;
     margin-top: 10px;
     font-size: $font-small;

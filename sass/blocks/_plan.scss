@@ -1,12 +1,12 @@
 .plan {
   background-color: $white;
-  &__title {
+  .plan__title {
     width: 280px;
     padding: 20px 0;
     border-left: 2px solid $gray;
     background-color: $darkblue;
   }
-  &__name {
+  .plan__name {
     display: block;
     margin: 0 auto;
     text-align: center;
@@ -16,7 +16,7 @@
     text-transform: uppercase;
     color: $white;
   }
-  &__cost {
+  .plan__cost {
     display: block;
     margin: 0 auto;
     text-align: center;
@@ -24,12 +24,12 @@
     font-weight: 300;
     color: $white;
   }
-  &__items {
+  .plan__items {
     width: 280px;
     margin: 0;
     padding: 0;
   }
-  &__option {
+  .plan__option {
     width: 280px;
     padding: 15px 20px;
     list-style-type: none;
