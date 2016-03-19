@@ -7,10 +7,11 @@
     padding-right: 20px;
   }
   @media ($tablet-width) {
+    background-color: transparent;
     width: 300px;
     padding: 0;
     margin-top: 0;
-    margin-bottom: 107px;
+    margin-bottom: 109px;
   }
   @media ($desktop-width) {
     margin-bottom: 125px;
@@ -21,13 +22,15 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin: 0;
+  margin: 0 auto;
+  padding: 0;
   text-decoration: none;
   text-align: center;
   font-size: 0;
   margin-bottom: 20px;
   @media ($tablet-width) {
-    margin-bottom: 50px;
+    margin-bottom: 33px;
+    width: 220px;
   }
   @media ($desktop-width) {
     margin-bottom: 55px;
@@ -35,21 +38,26 @@
 }
 
 .download-app__item {
+
+}
+
+.download-app__link {
   width: 60px;
   height: 60px;
   display: inline-block;
   vertical-align: top;
-  background: url("../../img/logo-apple.svg") no-repeat;
-  &:nth-of-type(2) {
+  &--apple {
+    background: url("../../img/logo-apple.svg") no-repeat;
+    background-position: 1px 1px;
+  }
+  &--android {
     background: url("../../img/logo-android.svg") no-repeat;
+    background-position: 11px 7px;
   }
-  &:nth-of-type(3) {
+  &--windows {
     background: url("../../img/logo-microsoft.svg") no-repeat;
+    background-position: 16px 13px;
   }
-}
-
-.download-app__link {
-
 }
 
 .download-app__description {

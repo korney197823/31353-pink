@@ -1,10 +1,3 @@
-@mixin clearfix {
-  &:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-}
 @mixin container {
   width: 320px;
   margin: 0 auto;

@@ -11,6 +11,9 @@
   font-weight: bold;
   color: $white;
   line-height: $height-small;
+  @media ($tablet-width) {
+    margin-bottom: 45px;
+  }
   @media ($desktop-width) {
     margin-bottom: 60px;
     font-size: 21px;
