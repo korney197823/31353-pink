@@ -87,6 +87,14 @@
     background-size: 270px 550px;
     background-position: 0 5px;
   }
+  @media ($desktop-width) {
+    width: 940px;
+    height: 300px;
+    background: url("../../img/iphone-screen-mobile.png") 52px 0 no-repeat,
+                url("../../img/iphone-screen-mobile.png") 375px 0 no-repeat,
+                url("../../img/iphone-screen-mobile.png") 694px 0 no-repeat;
+    background-size: 186px;
+  }
 }
 
 
