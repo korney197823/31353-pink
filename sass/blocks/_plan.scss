@@ -1,18 +1,18 @@
 .plan {
+  width: 280px;
   background-color: $white;
 }
 
 .plan__title {
-  width: 280px;
   padding: 20px 0;
   border-left: 2px solid $gray;
   background-color: $darkblue;
+  text-align: center;
 }
 
 .plan__name {
   display: block;
-  margin: 0 auto;
-  text-align: center;
+  margin: 0;
   font-size: $font-normal;
   font-weight: bold;
   line-height: $height-big;
@@ -23,7 +23,6 @@
 .plan__cost {
   display: block;
   margin: 0 auto;
-  text-align: center;
   font-size: $font-big;
   font-weight: 300;
   color: $white;

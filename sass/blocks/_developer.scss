@@ -1,5 +1,5 @@
 .developer {
-  width: 33%;
+  width: 130px;
   font-size: $font-less;
   @media ($tablet-width) {
     font-size: $font-small;
@@ -7,6 +7,9 @@
 }
 .developer__text {
   line-height: 36px;
+  @media ($desktop-width) {
+    font-size: $font-normal;
+  }
 }
 .developer__logo {
   display: inline-block;
