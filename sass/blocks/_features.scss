@@ -25,6 +25,7 @@
   @media ($tablet-width) {
     display: flex;
     flex-direction: row-reverse;
+    justify-content: space-between;
   }
   @media ($desktop-width) {
     width: 87.23%;
@@ -81,6 +82,10 @@
   background: url("../../img/iphone-screen-mobile.png") no-repeat;
   @media ($tablet-width) {
     width: 300px;
+    height: 485px;
+    margin: 0;
+    background-size: 270px 550px;
+    background-position: 0 5px;
   }
 }
 
