@@ -1,5 +1,4 @@
 .plans {
-  display: flex;
   padding-top: 70px;
   padding-bottom: 96px;
   background-color: $gray;
@@ -8,5 +7,18 @@
   }
   @media ($desktop-width) {
     padding-bottom: 174px;
+  }
+}
+.plans__wrap {
+  display: flex;
+  padding-left: 20px;
+  padding-right: 20px;
+  @media ($tablet-width) {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  @media ($desktop-width) {
+    max-width: 940px;
+    margin: 0 auto;
   }
 }
