@@ -1,12 +1,13 @@
 .plans {
-  padding-top: 70px;
+  padding-top: 90px;
   padding-bottom: 96px;
   background-color: $gray;
   @media ($tablet-width) {
-    padding-bottom: 27px;
+    padding-bottom: 71px;
   }
   @media ($desktop-width) {
-    padding-bottom: 174px;
+    padding-top: 150px;
+    padding-bottom: 95px;
   }
 }
 .plans__wrap {
@@ -20,5 +21,6 @@
   @media ($desktop-width) {
     max-width: 940px;
     margin: 0 auto;
+    padding: 0;
   }
 }
