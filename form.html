@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <title>Форма конкурса</title>
 </head>
@@ -10,7 +11,7 @@
   <header class="page-header">
     <div class="page-header__nav-wrap">
       <div class="logo">
-        <a class="logo__link" href="#">PINK</a>
+        <a class="logo__link" href="index.html">PINK</a>
       </div>
       <nav class="navigation">
         <a href="index.html" class="navigation__link">Главная</a>
@@ -19,99 +20,120 @@
         <a href="https://htmlacademy.ru/" class="navigation__link">HTML Academy</a>
       </nav>
     </div>
-    <h1 class="page-header__title">Взгляните на жизнь иначе!</h1>
+    <h1 class="page-header__title page-header__title--form">Конкурс на самое безбашенное путешествие с Пинк</h1>
   </header>
 
     <form class="form" action="#" method="post">
-      <fieldset>
-        <h2 class="form__title">
+      <h2 class="form__title">
         Поделитесь своей историей и получите шанс выйграть ценный приз -
         1000 миль на вашу бонусную карту!
-        </h2>
-        <label class="form__label">Имя:
-          <input class="form__text" type="text" placeholder="Введите ваше имя">
-        </label>
-        <label class="form__label">Фамилия:
-          <input class="form__text" type="text" placeholder="Укажите фамилию">
-        </label>
-        <label class="form__label">Отчество:
-          <input class="form__text" type="text" placeholder="Ну и отчество тоже">
-        </label>
-      </fieldset>
+        <span class="form__title-addtext">Пожалуйста, заполните форму ниже:</span>
+      </h2>
+      <div class="form__wrap">
+        <fieldset class="name-block">
+          <div class="name-block__wrap">
+            <label class="form__label" for="name">Имя:</label>
+            <input class="form__text" type="text" placeholder="Введите ваше имя" id="name">
+            <label class="form__label" for="surname">Фамилия:</label>
+            <input class="form__text" type="text" placeholder="Укажите фамилию" id="surname">
+            <label class="form__label" for="middlename">Отчество:</label>
+            <input class="form__text" type="text" placeholder="Ну и отчество тоже" id="middlename">
+          </div>
+        </fieldset>
 
 
-      <fieldset>
-        <h3 class="form__subtitle">
-        Ваши безбашенные достижения в путешествии
-        </h3>
-        <label class="form__label-checkbox">Сделал селфи с акулой
-          <input class="form__checkbox" type="checkbox">
-        </label>
-        <label class="form__label-checkbox">Обгорел на пляже
-          <input class="form__checkbox" type="checkbox">
-        </label>
-        <label class="form__label-checkbox">Видел Чака Норриса
-          <input class="form__checkbox" type="checkbox">
-        </label>
-        <label class="form__label-checkbox">Накупил сувениров
-          <input class="form__checkbox" type="checkbox">
-        </label>
-        <label class="form__label-checkbox">Удержал башню
-          <input class="form__checkbox" type="checkbox">
-        </label>
-        <label class="form__label-checkbox">Разгромил отель
-          <input class="form__checkbox" type="checkbox">
-        </label>
-      </fieldset>
+        <fieldset class="checkbox-block">
+            <legend class="form__subtitle">
+              Ваши безбашенные достижения в путешествии
+            </legend>
+          <div class="checkbox-block__wrap">
+            <label class="form__label-checkbox">Сделал селфи с акулой
+              <input class="form__checkbox" type="checkbox">
+            </label>
+            <label class="form__label-checkbox">Обгорел на пляже
+              <input class="form__checkbox" type="checkbox">
+            </label>
+            <label class="form__label-checkbox">Видел Чака Норриса
+              <input class="form__checkbox" type="checkbox">
+            </label>
+            <label class="form__label-checkbox">Накупил сувениров
+              <input class="form__checkbox" type="checkbox">
+            </label>
+            <label class="form__label-checkbox">Удержал башню
+              <input class="form__checkbox" type="checkbox">
+            </label>
+            <label class="form__label-checkbox">Разгромил отель
+              <input class="form__checkbox" type="checkbox">
+            </label>
+          </div>
+        </fieldset>
 
 
-     <fieldset>
-       <label class="form__label" for="phone">Номерок телефончика
-         <input class="form__text" type="tel" id="phone" placeholder="Номер, пожалуйста">
-       </label>
-       <label class="form__label" for="email">Адресок почты
-         <input class="form__text" type="email" id="email" placeholder="E-mail, пожалуйста">
-       </label>
-     </fieldset>
+        <fieldset class="contacts-block">
+          <legend class="form__subtitle">
+            Контактная информация
+          </legend>
+          <div class="contacts-block__wrap">
+            <div class="contacts-block__wrap-phone">
+              <label class="form__label" for="phone">Номерок телефончика</label>
+              <input class="form__text" type="tel" id="phone" placeholder="Номер, пожалуйста">
+            </div>
+            <div class="contacts-block__wrap-email">
+              <label class="form__label" for="email">Адресок почты</label>
+              <input class="form__text" type="email" id="email" placeholder="E-mail, пожалуйста">
+            </div>
+          </div>
+        </fieldset>
 
 
-      <fieldset>
-        <h3 class="form__subtitle">
-        С каким приложением путешествовали?
-        </h3>
-        <label class="form__label-radio">Pink для IOS
-          <input class="form__radio" type="radio">
-        </label>
-        <label class="form__label-radio" for="android">Pink на Android
-          <input class="form__radio" type="radio" id="android">
-        </label>
-        <label class="form__label-radio">Windows Phone
-          <input class="form__radio" type="radio">
-        </label>
-      </fieldset>
+        <fieldset class="radio-block">
+            <legend class="form__subtitle">
+              С каким приложением путешествовали?
+            </legend>
+          <div class="radio-block__wrap">
+            <label class="form__label-radio">Pink для IOS
+              <input class="form__radio" type="radio">
+            </label>
+            <label class="form__label-radio" for="android">Pink на Android
+              <input class="form__radio" type="radio" id="android">
+            </label>
+            <label class="form__label-radio">Windows Phone
+              <input class="form__radio" type="radio">
+            </label>
+          </div>
+        </fieldset>
 
 
-      <h3 class="form__subtitle">
-        Опишите свои эмоции
-      </h3>
-      <textarea class="form__textarea" name="emotion" id="emotion" cols="30" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-      <input class="button" type="submit" value="Отправить форму">
-      <p class="form__required-text"><sup class="form__required-star">*</sup> - Обязательные поля</p>
+        <fieldset class="text-block">
+          <legend class="form__subtitle">
+            Опишите свои эмоции
+          </legend>
+        <textarea class="form__textarea" name="emotion" id="emotion" cols="30" rows="7"
+                  placeholder="Можно прям в красках, не стесняясь в выражениях">
+        </textarea>
+        </fieldset>
+        <div class="button__wrap">
+          <input class="button button--form" type="submit" value="Отправить форму">
+          <p class="form__required-text"><sup class="form__required-star">*</sup> &mdash; Обязательные поля</p>
+        </div>
+      </div>
     </form>
 
 
-  <footer class="social-footer">
-    <div class="social-footer__logo">
-      <a href="" class="social-footer__logo-link">PINK</a>
-    </div>
-    <div class="social">
-      <a href="#" class="social__icon">Twitter</a>
-      <a href="#" class="social__icon">Facebook</a>
-      <a href="#" class="social__icon">Youtube</a>
-    </div>
-    <div class="developer">
-      <span class="developer__text">Разработано</span>
-      <a href="#" class="developer__logo">HTML Academy</a>
+  <footer class="social-footer social-footer--visible">
+    <div class="social-footer__wrap">
+      <div class="social-footer__logo">
+        <a href="" class="social-footer__logo-link">PINK</a>
+      </div>
+      <div class="social">
+        <a href="#" class="social__icon social__icon--twitter">Twitter</a>
+        <a href="#" class="social__icon social__icon--facebook">Facebook</a>
+        <a href="#" class="social__icon social__icon--youtube">Youtube</a>
+      </div>
+      <div class="developer">
+        <span class="developer__text">Разработано</span>
+        <a href="#" class="developer__logo">HTML Academy</a>
+      </div>
     </div>
   </footer>
 
@@ -123,7 +145,7 @@
       Проверьте поля, выделенные красным,
       скорее всего вы забыли их заполнить
     </p>
-    <button class="button" type="button" >OK</button>
+    <button class="button button--form" type="button" >OK</button>
   </section>
 
 <section class="modal">
@@ -135,7 +157,7 @@
       уже поступила к нам. В ближайшее время
       мы рассмотрим ее и оповестим вас.
     </p>
-    <button class="button" type="button">Закрыть окно</button>
+    <button class="button button--form" type="button">Закрыть окно</button>
   </section>
 </body>
 </html>

@@ -1,0 +1,15 @@
+.name-block {
+  margin: 0;
+  padding: 0 20px 30px 20px;
+  border: none;
+  @media ($tablet-width) {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 5px;
+  }
+}
+.name-block__wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}

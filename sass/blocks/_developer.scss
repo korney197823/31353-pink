@@ -1,8 +1,10 @@
 .developer {
   width: 130px;
-  font-size: $font-less;
+  line-height: $height-small;
+  font-size: $font-small;
   @media ($tablet-width) {
     font-size: $font-small;
+    padding-top: 8px;
   }
 }
 .developer__text {

@@ -19,4 +19,27 @@
     font-size: 21px;
     font-weight: bold;
   }
+  &--form {
+    width: 280px;
+    margin: 0 auto;
+    background-color: $darkgreen;
+    border: none;
+    border-radius: 3px;
+    line-height: $height-big;
+    text-transform: uppercase;
+    @media ($tablet-width) {
+      width: 300px;
+      margin: 0;
+    }
+
+  }
+
+}
+.button__wrap {
+  @media ($tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    order: 6;
+  }
 }

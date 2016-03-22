@@ -1,7 +1,11 @@
 .social-footer {
   display: none;
+  &--visible {
+    display: block;
+  }
   @media ($tablet-width) {
     display: block;
+    margin-top: 48px;
   }
 }
 
@@ -9,8 +13,12 @@
   @include container-fluid;
   min-height: 128px;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  @media ($tablet-width) {
+    flex-direction: row;
+  }
   @media ($desktop-width) {
     min-height: 197px;
   }
@@ -18,8 +26,20 @@
 
 .social-footer__logo {
   width: 150px;
+  margin-bottom: 29px;
+  @media ($tablet-width) {
+    margin: 0;
+    padding: 0;
+  }
 }
 
 .social-footer__logo-link {
-
+  display: block;
+  background-image: url("../../img/logo-pink-blue-mobile.svg");
+  background-repeat: no-repeat;
+  width: 148px;
+  height: 51px;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
 }

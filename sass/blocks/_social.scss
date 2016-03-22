@@ -1,5 +1,14 @@
 .social {
+  display: flex;
   width: 178px;
+  justify-content: space-between;
+  margin-bottom: 35px;
+  @media ($tablet-width) {
+    margin: 0;
+    margin-right: 25px;
+    margin-top: 7px;
+    padding: 0;
+  }
 }
 .social__icon {
   display: inline-block;

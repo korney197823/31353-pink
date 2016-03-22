@@ -59,6 +59,23 @@
     line-height: 60px;
     font-size: 50px;
   }
+  &--form {
+    display: block;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 30px;
+    padding-bottom: 53px;
+    line-height: 29px;
+    font-size: $font-big;
+    @media ($tablet-width) {
+      @include container-fluid;
+      padding: 0;
+      padding-top: 72px;
+      padding-bottom: 80px;
+      font-size: 50px;
+      line-height: 60px;
+    }
+  }
 }
 
 
