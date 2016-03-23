@@ -1,0 +1,35 @@
+.social {
+  display: flex;
+  width: 178px;
+  justify-content: space-between;
+  margin-bottom: 35px;
+  @media ($tablet-width) {
+    margin: 0;
+    margin-right: 25px;
+    margin-top: 7px;
+    padding: 0;
+  }
+}
+.social__icon {
+  display: inline-block;
+  vertical-align: top;
+  text-indent: -9999px;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  border: 3px solid $gray;
+  &--twitter {
+    background:  url(../../img/icon-twitter.svg) no-repeat;
+    background-position: 50% 50%;
+  }
+  &--facebook {
+    background:  url(../../img/icon-facebook.svg) no-repeat;
+    background-position: 50% 50%;
+  }
+  &--youtube {
+    background:  url(../../img/icon-youtube.svg) no-repeat;
+    background-position: 50% 50%;
+  }
+
+
+}

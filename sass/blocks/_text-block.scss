@@ -1,0 +1,21 @@
+.text-block {
+  display: flex;
+  position: relative;
+  margin: 0;
+  padding-top: 92px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 47px;
+  border: none;
+  @media ($tablet-width) {
+    order: 5;
+    margin-bottom: 68px;
+    padding-top: 36px;
+    padding-bottom: 51px;
+    border: 2px solid #e5e5e5;
+  }
+  .form__subtitle {
+    top: 39px;
+    left: 38px;
+  }
+}

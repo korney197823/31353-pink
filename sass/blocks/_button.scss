@@ -1,0 +1,45 @@
+.button {
+  display: block;
+  padding: 16px 20px;
+  margin-bottom: 30px;
+  border: 3px solid $white;
+  border-radius: 30px;
+  text-align: center;
+  text-decoration: none;
+  font-family: $font;
+  font-size: $font-normal;
+  font-weight: bold;
+  color: $white;
+  line-height: $height-small;
+  @media ($tablet-width) {
+    margin-bottom: 45px;
+  }
+  @media ($desktop-width) {
+    margin-bottom: 67px;
+    font-size: 21px;
+    font-weight: bold;
+  }
+  &--form {
+    width: 280px;
+    margin: 0 auto;
+    background-color: $darkgreen;
+    border: none;
+    border-radius: 3px;
+    line-height: $height-big;
+    text-transform: uppercase;
+    @media ($tablet-width) {
+      width: 300px;
+      margin: 0;
+    }
+
+  }
+
+}
+.button__wrap {
+  @media ($tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    order: 6;
+  }
+}

@@ -1,0 +1,26 @@
+.plans {
+  padding-top: 90px;
+  padding-bottom: 96px;
+  background-color: $gray;
+  @media ($tablet-width) {
+    padding-bottom: 71px;
+  }
+  @media ($desktop-width) {
+    padding-top: 150px;
+    padding-bottom: 95px;
+  }
+}
+.plans__wrap {
+  display: flex;
+  padding-left: 20px;
+  padding-right: 20px;
+  @media ($tablet-width) {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  @media ($desktop-width) {
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
