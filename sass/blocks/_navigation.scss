@@ -1,6 +1,5 @@
 .navigation {
   display: none;
-  background-color: $darkblue;
   @media ($desktop-width) {
     display: flex;
     justify-content: space-between;
@@ -9,10 +8,52 @@
 }
 
 .navigation__toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  display: block;
+  width: 70px;
+  height: 50px;
+  font-size: 0;
+  cursor: pointer;
   @media ($desktop-width) {
     display: none;
-
   }
+}
+.navigation__toggle--closed::after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 17px;
+    width: 36px;
+    height: 2px;
+    background-color: #ffffff;
+    box-shadow: 0 8px 0 0 #ffffff,
+    0 16px 0 0 #ffffff;
+}
+.navigation__toggle--opened {
+  top: 0;
+  right: 0;
+}
+
+.navigation__toggle--opened::before,
+.navigation__toggle--opened::after {
+  content: "";
+  position: absolute;
+  top: 24px;
+  left: 18px;
+  width: 36px;
+  height: 2px;
+  background-color: #ffffff;
+}
+
+.navigation__toggle--opened::before {
+  transform: rotate(45deg);
+}
+
+.navigation__toggle--opened::after {
+  transform: rotate(-45deg);
 }
 
 .navigation__link {
@@ -25,6 +66,9 @@
   font-size: $font-normal;
   font-weight: bold;
   line-height: $height-big + 2px;
+  background-color: $darkblue;
+  border-top: 1px solid #485460;
+  border-bottom: 1px solid #000000;
   color: #fff;
   @media ($desktop-width) {
     padding: 0;
