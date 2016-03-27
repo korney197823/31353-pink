@@ -1,0 +1,42 @@
+.post__wrap {
+  @media ($tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .post {
+    @media ($tablet-width) {
+      width: calc(50% - 20px);
+    }
+    @media ($desktop-width) {
+      width: calc(100%/3 - 40px);
+    }
+  }
+}
+.post {
+  display: flex;
+  flex-direction: column;
+
+}
+.post--post-of-day {
+  .post__img-wrap {
+    margin-left: -20px;
+    margin-right: -20px;
+    @media ($tablet-width) {
+      margin-left: -40px;
+      margin-right: -40px;
+    }
+    @media ($desktop-width) {
+      margin-left: -130px;
+      margin-right: -130px;
+    }
+  }
+}
+
+.post__img {
+  width: 100%;
+}
+
+.post__text {
+  flex-grow: 1;
+}
