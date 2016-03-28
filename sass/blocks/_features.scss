@@ -79,7 +79,7 @@
   margin-top: 40px;
   width: 160px;
   height: 280px;
-  background: url("../../img/iphone-screen-mobile.png") no-repeat;
+  background: url("/img/iphone-screen-mobile.png") no-repeat;
   @media ($tablet-width) {
     width: 300px;
     height: 485px;
@@ -90,9 +90,9 @@
   @media ($desktop-width) {
     width: 940px;
     height: 300px;
-    background: url("../../img/iphone-screen-mobile.png") 52px 0 no-repeat,
-                url("../../img/iphone-screen-mobile.png") 375px 0 no-repeat,
-                url("../../img/iphone-screen-mobile.png") 694px 0 no-repeat;
+    background: url("/img/iphone-screen-mobile.png") 52px 0 no-repeat,
+                url("/img/iphone-screen-mobile.png") 375px 0 no-repeat,
+                url("/img/iphone-screen-mobile.png") 694px 0 no-repeat;
     background-size: 186px;
   }
 }
