@@ -1,18 +1,22 @@
 
 .page-header {
-  background: #2a3848 url("../../img/bg-back-mobile.jpg");
+  background: url("../../img/iphone-hand-mobile.png") no-repeat 0 175px,
+              #2a3848 url("../../img/bg-back-mobile.jpg");
   position: relative;
   @media
   (min-resolution: 144dpi),
   (min-resolution: 1.5dppx) {
-    background-image: url("../../img/bg-back-mobile@2x.jpg");
+    background: url("../../img/iphone-hand-mobile@2x.png") no-repeat 0 175px,
+                      url("../../img/bg-back-mobile@2x.jpg");
   }
   @media ($tablet-width) {
-    background: #2a3848 url("../../img/bg-back-tablet@1x.jpg");
+    background: url("../../img/iphone-hand-tablet@1x.png") no-repeat 0 184px,
+                #2a3848 url("../../img/bg-back-tablet@1x.jpg");
     @media
     (min-resolution: 144dpi),
     (min-resolution: 1.5dppx) {
-        background-image: url("../../img/bg-back-tablet@2x.jpg");
+        background: url("../../img/iphone-hand-tablet@2x.png") no-repeat 0 184px,
+                          url("../../img/bg-back-tablet@2x.jpg");
       }
   }
   @media ($desktop-width) {
@@ -20,6 +24,24 @@
   }
 }
 
+  .page-header--simple {
+    background: #2a3848 url("../../img/bg-back-mobile.jpg");
+    position: relative;
+    @media(min-resolution: 144dpi),
+    (min-resolution: 1.5dppx) {
+      background: url("../../img/bg-back-mobile@2x.jpg");
+  }
+  @media ($tablet-width) {
+    background: #2a3848 url("../../img/bg-back-tablet@1x.jpg");
+    @media(min-resolution: 144dpi),
+    (min-resolution: 1.5dppx) {
+      background: url("../../img/bg-back-tablet@2x.jpg");
+    }
+  }
+  @media ($desktop-width) {
+    background: #2a3848 url("../../img/bg-back-desktop.jpg");
+  }
+}
 
 
 .page-header__nav {
@@ -33,14 +55,13 @@
 }
 
 .page-header__nav-wrap {
-  @include container-fluid;
+  display: flex;
+  justify-content: space-between;
   min-height: 66px;
   @media ($tablet-width) {
     min-height: 110px;
   }
   @media ($desktop-width) {
-    display: flex;
-    justify-content: space-between;
     align-items: center;
   }
 }
@@ -78,6 +99,23 @@
     font-size: 50px;
   }
   &--form {
+    display: block;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 30px;
+    padding-bottom: 53px;
+    line-height: 29px;
+    font-size: $font-big;
+    @media ($tablet-width) {
+      @include container-fluid;
+      padding: 0;
+      padding-top: 72px;
+      padding-bottom: 80px;
+      font-size: 50px;
+      line-height: 60px;
+    }
+  }
+  &--photo {
     display: block;
     padding-left: 20px;
     padding-right: 20px;

@@ -1,14 +1,21 @@
 .logo {
-
+  width: 77px;
   @media ($tablet-width) {
-
+    width: 150px;
   }
   @media ($desktop-width) {
-    width: 34%;
+    width: 150px;
   }
 }
 
 .logo__link {
-
+  display: block;
+  transform: translateY(88%);
+  @media ($tablet-width) {
+    transform: translateY(62%);
+  }
 }
 
+.logo__img {
+
+}
