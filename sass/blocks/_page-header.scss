@@ -1,45 +1,54 @@
 
 .page-header {
-  background: url("../../img/iphone-hand-mobile.png") no-repeat 0 175px,
-              #2a3848 url("../../img/bg-back-mobile.jpg");
   position: relative;
+  background-repeat: no-repeat;
+  background-color: #2a3848;
+  background-image: url("../../img/iphone-hand-mobile.png"),
+                    url("../../img/bg-back-mobile.jpg");
+  background-position: 0 175px,
+                       0 0;
   @media
   (min-resolution: 144dpi),
   (min-resolution: 1.5dppx) {
-    background: url("../../img/iphone-hand-mobile@2x.png") no-repeat 0 175px,
+    background-image: url("../../img/iphone-hand-mobile@2x.png"),
                       url("../../img/bg-back-mobile@2x.jpg");
   }
   @media ($tablet-width) {
-    background: url("../../img/iphone-hand-tablet@1x.png") no-repeat 0 184px,
-                #2a3848 url("../../img/bg-back-tablet@1x.jpg");
+    background-image: url("../../img/iphone-hand-tablet@1x.png"),
+                      url("../../img/bg-back-tablet@1x.jpg");
+    background-position: 0 184px,
+                         0 0;
     @media
     (min-resolution: 144dpi),
     (min-resolution: 1.5dppx) {
-        background: url("../../img/iphone-hand-tablet@2x.png") no-repeat 0 184px,
+        background-image: url("../../img/iphone-hand-tablet@2x.png"),
                           url("../../img/bg-back-tablet@2x.jpg");
       }
   }
   @media ($desktop-width) {
-    background: #2a3848 url("../../img/bg-back-desktop.jpg");
+    background-image: url("../../img/bg-back-desktop.jpg");
+    background-position: 0 0;
   }
 }
 
   .page-header--simple {
-    background: #2a3848 url("../../img/bg-back-mobile.jpg");
     position: relative;
+    background-color: #2a3848;
+    background-image:  url("../../img/bg-back-mobile.jpg");
+    background-position: 0 0;
     @media(min-resolution: 144dpi),
     (min-resolution: 1.5dppx) {
-      background: url("../../img/bg-back-mobile@2x.jpg");
+      background-image: url("../../img/bg-back-mobile@2x.jpg");
   }
   @media ($tablet-width) {
-    background: #2a3848 url("../../img/bg-back-tablet@1x.jpg");
+    background-image: url("../../img/bg-back-tablet@1x.jpg");
     @media(min-resolution: 144dpi),
     (min-resolution: 1.5dppx) {
-      background: url("../../img/bg-back-tablet@2x.jpg");
+      background-image: url("../../img/bg-back-tablet@2x.jpg");
     }
   }
   @media ($desktop-width) {
-    background: #2a3848 url("../../img/bg-back-desktop.jpg");
+    background-image: url("../../img/bg-back-desktop.jpg");
   }
 }
 
