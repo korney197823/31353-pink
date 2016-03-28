@@ -9,7 +9,7 @@
       width: calc(50% - 20px);
     }
     @media ($desktop-width) {
-      width: calc(100%/3 - 40px);
+      width: calc((100% - 40px) / 3);
     }
   }
 }
