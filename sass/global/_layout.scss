@@ -19,11 +19,11 @@ body {
   }
 }
 .container {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: $container-padding-mobile;
+  padding-right: $container-padding-mobile;
   @media ($tablet-width) {
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: $container-padding-tablet;
+    padding-right: $container-padding-tablet;
   }
   @media ($desktop-width) {
     padding: 0;

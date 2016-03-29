@@ -20,11 +20,11 @@
 }
 .post--post-of-day {
   .post__img-wrap {
-    margin-left: -20px;
-    margin-right: -20px;
+    margin-left: -$container-padding-mobile;
+    margin-right: -$container-padding-mobile;
     @media ($tablet-width) {
-      margin-left: -40px;
-      margin-right: -40px;
+      margin-left: -$container-padding-tablet;
+      margin-right: -$container-padding-tablet;
     }
     @media ($desktop-width) {
       margin-left: -130px;
