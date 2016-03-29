@@ -4,19 +4,19 @@
     flex-wrap: wrap;
     justify-content: space-between;
   }
-  .post {
-    @media ($tablet-width) {
-      width: calc(50% - 20px);
-    }
-    @media ($desktop-width) {
-      width: calc((100% - 40px) / 3);
-    }
-  }
 }
 .post {
   display: flex;
   flex-direction: column;
+}
 
+.post:not(.post--post-of-day) {
+  @media ($tablet-width) {
+    width: calc(50% - 20px);
+  }
+  @media ($desktop-width) {
+    width: calc((100% - 40px) / 3);
+  }
 }
 .post--post-of-day {
   .post__img-wrap {
