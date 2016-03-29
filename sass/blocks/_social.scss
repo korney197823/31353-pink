@@ -18,17 +18,16 @@
   height: 52px;
   border-radius: 50%;
   border: 3px solid $gray;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
   &--twitter {
-    background:  url("/img/icon-twitter.svg") no-repeat;
-    background-position: 50% 50%;
+    background-image:  url("/img/icon-twitter.svg");
   }
   &--facebook {
-    background:  url("/img/icon-facebook.svg") no-repeat;
-    background-position: 50% 50%;
+    background-image:  url("/img/icon-facebook.svg");
   }
   &--youtube {
-    background:  url("/img/icon-youtube.svg") no-repeat;
-    background-position: 50% 50%;
+    background-image:  url("/img/icon-youtube.svg");
   }
 
 
