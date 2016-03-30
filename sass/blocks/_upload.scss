@@ -1,3 +1,21 @@
+.upload {
+  margin-bottom: 38px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  background-color: $gray;
+}
+.upload__title {
+  margin: 0;
+  text-align: center;
+  padding-top: 42px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 41px;
+  font-size: $font-small;
+  font-weight: normal;
+  line-height: $height-big;
+}
+
 .upload__wrap {
   @media ($tablet-width) {
     display: flex;
@@ -31,6 +49,7 @@
   width: 100%;
 }
 .upload-button__wrap {
+  margin-top: 71px;
   @media ($tablet-width) {
     display: flex;
     justify-content: space-between;

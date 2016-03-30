@@ -8,11 +8,14 @@
 .post {
   display: flex;
   flex-direction: column;
+  padding-bottom: 20px;
+  background-color: $gray;
 }
 
 .post:not(.post--post-of-day) {
+  margin-top: 20px;
   @media ($tablet-width) {
-    width: calc(50% - 20px);
+    width: calc(50% - 10px);
   }
   @media ($desktop-width) {
     width: calc((100% - 40px) / 3);
@@ -36,7 +39,53 @@
 .post__img {
   width: 100%;
 }
+.post__user {
+  margin: 0;
+  padding-top: 12px;
+  padding-left: 18px;
+  font-size: $font-small;
+  font-weight: bold;
+}
+.post__user-time {
+  font-size: $font-less;
+  font-weight: 300;
+  line-height: $height-normal;
+  text-transform: uppercase;
+}
 
 .post__text {
   flex-grow: 1;
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 0;
+  padding-left: 18px;
+  font-size: $font-small;
+  line-height: $height-normal;
+}
+.post__link-wrap {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  padding-left: 18px;
+}
+
+.post__like {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 16px;
+  text-decoration: none;
+  font-size: $font-less;
+  text-transform: uppercase;
+  line-height: $height-normal;
+  color: $pink;
+
+}
+.post__button {
+  width: 16px;
+  height: 16px;
+  border: none;
+  background-color: $gray;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-image: url("../../img/icon-heart.svg");
 }
