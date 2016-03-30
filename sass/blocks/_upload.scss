@@ -3,6 +3,11 @@
   padding-top: 20px;
   padding-bottom: 30px;
   background-color: $gray;
+  @media ($tablet-width) {
+    padding-top: 57px;
+    padding-bottom: 49px;
+    margin-bottom: 0;
+  }
 }
 .upload__title {
   margin: 0;
@@ -14,6 +19,11 @@
   font-size: $font-small;
   font-weight: normal;
   line-height: $height-big;
+  @media ($tablet-width) {
+    padding-top: 68px;
+    padding-bottom: 69px;
+    font-size: $font-normal;
+  }
 }
 
 .upload__wrap {
@@ -29,7 +39,7 @@
 }
 .upload__img-wrap {
   @media ($tablet-width) {
-    width: calc(50% - 20px);
+    width: calc(50% - 10px);
   }
   @media ($desktop-width) {
     width: calc(50% - 90px);
@@ -45,6 +55,9 @@
     width: calc(50%);
   }
 }
+.upload__file {
+  display: none;
+}
 .upload__img {
   width: 100%;
 }
@@ -52,7 +65,10 @@
   margin-top: 71px;
   @media ($tablet-width) {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
+    width: 260px;
+    margin: 0 auto;
   }
 
 }

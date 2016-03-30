@@ -5,7 +5,10 @@
   flex-direction: column;
   justify-content: space-between;
   margin: 0 auto;
-  margin-top: 12px;
+  margin-top: 36px;
+  @media ($tablet-width) {
+    margin: 0;
+  }
 
 }
 .filter__button-wrap {
@@ -13,6 +16,9 @@
   justify-content: space-between;
   width: 210px;
   margin: 0 auto;
+  @media ($tablet-width) {
+    flex-direction: column;
+  }
 }
 .filter button {
   display: block;
@@ -29,15 +35,27 @@
 }
 .filter__size svg {
   fill: $pink;
+  @media ($tablet-width) {
+    width: 25px;
+    height: 25px;
+  }
 }
 .filter__color {
 
 }
 .filter__color svg {
-
+  @media ($tablet-width) {
+    width: 25px;
+    height: 25px;
+    fill: $pink;
+  }
 }
-.filter__bright {
-
+.filter__bright svg {
+  @media ($tablet-width) {
+    width: 20px;
+    height: 20px;
+    fill: $pink;
+  }
 }
 .filter__range {
   position: relative;

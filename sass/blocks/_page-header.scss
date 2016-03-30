@@ -56,10 +56,10 @@
 .page-header__nav {
   background-color: rgba(0,0,0,0.3);
   @media ($tablet-width) {
-    margin-bottom: 92px;
+
   }
   @media ($desktop-width) {
-    margin-bottom: 110px;
+
   }
 }
 
@@ -81,6 +81,10 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    margin-top: 92px;
+  }
+  @media ($desktop-width) {
+    margin-top: 110px;
   }
 }
 
@@ -135,8 +139,8 @@
     @media ($tablet-width) {
       @include container-fluid;
       padding: 0;
-      padding-top: 72px;
-      padding-bottom: 80px;
+      padding-top: 71px;
+      padding-bottom: 139px;
       font-size: 50px;
       line-height: 60px;
     }

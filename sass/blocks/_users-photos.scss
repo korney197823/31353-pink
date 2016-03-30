@@ -8,4 +8,11 @@
   font-size: $font-small;
   font-weight: normal;
   line-height: $height-big;
+  @media ($tablet-width) {
+    font-size: $font-normal;
+    padding-top: 92px;
+    padding-bottom: 76px;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
 }
