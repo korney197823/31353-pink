@@ -1,11 +1,14 @@
 .name-block {
   margin: 0;
-  padding: 0 20px 30px 20px;
+  padding-bottom: 30px;
+  padding-left: 0;
+  padding-right: 0;
   border: none;
   @media ($tablet-width) {
-    padding-left: 0;
-    padding-right: 0;
     padding-bottom: 5px;
+  }
+  @media ($desktop-width) {
+    width: calc(100%/2 - 35px);
   }
 }
 .name-block__wrap {

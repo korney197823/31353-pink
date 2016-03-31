@@ -10,7 +10,6 @@
 }
 
 .social-footer__wrap {
-  @include container-fluid;
   min-height: 128px;
   display: flex;
   flex-direction: column;
@@ -35,11 +34,4 @@
 
 .social-footer__logo-link {
   display: block;
-  background-image: url("/img/logo-pink-blue-mobile.svg");
-  background-repeat: no-repeat;
-  width: 148px;
-  height: 51px;
-  text-indent: 100%;
-  white-space: nowrap;
-  overflow: hidden;
 }

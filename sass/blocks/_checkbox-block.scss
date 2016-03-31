@@ -1,16 +1,31 @@
 .checkbox-block {
-  display: flex;
   position: relative;
   margin: 0;
-  padding: 119px 20px 0 20px;
+  margin-right: -$container-padding-mobile;
+  margin-left: -$container-padding-mobile;
+  padding-top: 119px;
+  padding-left: 21px;
+  padding-bottom: 0;
   border: none;
   background-color: $gray;
   @media ($tablet-width) {
     order: 4;
     margin-bottom: 55px;
+    margin-left: 0;
+    margin-right: 0;
     padding-top: 52px;
     padding-left: 59px;
     background-color: $white;
     border: 2px solid #e5e5e5;
+  }
+  @media ($desktop-width) {
+    width: 100%;
+
+  }
+}
+.checkbox-block__wrap {
+  @media ($desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
   }
 }
