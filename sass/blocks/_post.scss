@@ -1,0 +1,127 @@
+.post__wrap {
+  @media ($tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+.post {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+  background-color: $gray;
+}
+
+.post:not(.post--post-of-day) {
+  margin-top: 20px;
+  @media ($tablet-width) {
+    width: calc(50% - 10px);
+  }
+  @media ($desktop-width) {
+    width: calc((100% - 40px) / 3);
+  }
+}
+.post--post-of-day {
+  @media ($tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 31px;
+  }
+  .post__img-wrap {
+    margin-left: -$container-padding-mobile;
+    margin-right: -$container-padding-mobile;
+    @media ($tablet-width) {
+      margin-left: -$container-padding-tablet;
+      margin-right: -$container-padding-tablet;
+    }
+    @media ($desktop-width) {
+      margin-left: -130px;
+      margin-right: -130px;
+    }
+  }
+  .post__text {
+    @media ($tablet-width) {
+      order: 2;
+    }
+  }
+  .post__link-wrap {
+    @media ($tablet-width) {
+      padding-left: 0;
+      padding-top: 20px;
+      margin-right: 27px;
+      width: 137px;
+    }
+  }
+}
+
+
+.post__img {
+  width: 100%;
+}
+.post__user {
+  margin: 0;
+  padding-top: 12px;
+  padding-left: 18px;
+  font-size: $font-small;
+  font-weight: bold;
+  @media ($tablet-width) {
+    padding-top: 19px;
+    padding-left: 27px;
+  }
+}
+.post__user-time {
+  font-size: $font-less;
+  font-weight: 300;
+  line-height: $height-normal;
+  text-transform: uppercase;
+}
+
+.post__text {
+  flex-grow: 1;
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 0;
+  padding-left: 18px;
+  font-size: $font-small;
+  line-height: $height-normal;
+  @media ($tablet-width) {
+    margin-bottom: 3px;
+    padding-left: 27px;
+    min-height: 48px;
+  }
+}
+.post__link-wrap {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  padding-left: 18px;
+  @media ($tablet-width) {
+    flex-direction: row;
+    padding-top: 10px;
+    margin-right: 30px;
+    padding-left: 11px;
+    justify-content: space-between;
+  }
+}
+
+.post__like {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 16px;
+  text-decoration: none;
+  font-size: $font-less;
+  text-transform: uppercase;
+  line-height: $height-normal;
+  color: $pink;
+
+}
+.post__button {
+  width: 16px;
+  height: 16px;
+  border: none;
+  background-color: $gray;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-image: url("../../img/icon-heart.svg");
+}

@@ -18,6 +18,11 @@ $green: #3dc644;
 $pink: #d22856;
 $red: #f25b26;
 
+$container-padding-mobile: 20px;
+$container-padding-tablet: 40px;
+
 $tablet-width: "min-width: 700px";
 $desktop-width: "min-width: 1200px";
-$mobile-width-only: "max-width: 699px";
+$mobile-width-only: "max-width: 1199px";
+
+$retina: "(min-resolution: 144dpi), (min-resolution: 1.5dppx)";

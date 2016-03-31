@@ -1,28 +1,76 @@
 
 .page-header {
-  background: #2a3848;
   position: relative;
+  background-repeat: no-repeat;
+  background-color: #2a3848;
+  background-image:
+    url("/img/iphone-hand-mobile.png"),
+    url("/img/bg-back-mobile.jpg");
+  background-position:
+    0 175px,
+    0 0;
+  @media #{$retina} {
+    background-image:
+      url("/img/iphone-hand-mobile@2x.png"),
+      url("/img/bg-back-mobile@2x.jpg");
+  }
+  @media ($tablet-width) {
+    background-image:
+      url("/img/iphone-hand-tablet@1x.png"),
+      url("/img/bg-back-tablet@1x.jpg");
+    background-position:
+      0 184px,
+      0 0;
+    @media #{$retina} {
+        background-image:
+          url("/img/iphone-hand-tablet@2x.png"),
+          url("/img/bg-back-tablet@2x.jpg");
+      }
+  }
+  @media ($desktop-width) {
+    background-image: url("/img/bg-back-desktop.jpg");
+    background-position: 0 0;
+  }
 }
+
+  .page-header--simple {
+    position: relative;
+    background-color: #2a3848;
+    background-image:  url("/img/bg-back-mobile.jpg");
+    background-position: 0 0;
+    @media #{$retina} {
+      background-image: url("/img/bg-back-mobile@2x.jpg");
+  }
+  @media ($tablet-width) {
+    background-image: url("/img/bg-back-tablet@1x.jpg");
+    @media #{$retina} {
+      background-image: url("/img/bg-back-tablet@2x.jpg");
+    }
+  }
+  @media ($desktop-width) {
+    background-image: url("/img/bg-back-desktop.jpg");
+  }
+}
+
 
 .page-header__nav {
   background-color: rgba(0,0,0,0.3);
   @media ($tablet-width) {
-    margin-bottom: 92px;
+
   }
   @media ($desktop-width) {
-    margin-bottom: 110px;
+
   }
 }
 
 .page-header__nav-wrap {
-  @include container-fluid;
+  display: flex;
+  justify-content: space-between;
   min-height: 66px;
   @media ($tablet-width) {
     min-height: 110px;
   }
   @media ($desktop-width) {
-    display: flex;
-    justify-content: space-between;
     align-items: center;
   }
 }
@@ -33,6 +81,10 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    margin-top: 92px;
+  }
+  @media ($desktop-width) {
+    margin-top: 110px;
   }
 }
 
@@ -72,6 +124,23 @@
       padding: 0;
       padding-top: 72px;
       padding-bottom: 80px;
+      font-size: 50px;
+      line-height: 60px;
+    }
+  }
+  &--photo {
+    display: block;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 30px;
+    padding-bottom: 83px;
+    line-height: 29px;
+    font-size: $font-big;
+    @media ($tablet-width) {
+      @include container-fluid;
+      padding: 0;
+      padding-top: 71px;
+      padding-bottom: 139px;
       font-size: 50px;
       line-height: 60px;
     }

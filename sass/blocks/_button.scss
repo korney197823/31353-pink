@@ -31,7 +31,13 @@
       width: 300px;
       margin: 0;
     }
-
+  }
+  &--upload {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 12px;
+    color: $pink;
+    border-color: $pink;
   }
 
 }

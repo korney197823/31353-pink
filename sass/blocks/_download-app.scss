@@ -50,15 +50,15 @@
   vertical-align: top;
   background-repeat: no-repeat;
   &--apple {
-    background-image: url("../../img/logo-apple.svg");
+    background-image: url("/img/logo-apple.svg");
     background-position: 1px 1px;
   }
   &--android {
-    background-image: url("../../img/logo-android.svg");
+    background-image: url("/img/logo-android.svg");
     background-position: 11px 7px;
   }
   &--windows {
-    background-image: url("../../img/logo-microsoft.svg");
+    background-image: url("/img/logo-microsoft.svg");
     background-position: 16px 13px;
   }
 }

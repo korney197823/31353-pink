@@ -7,22 +7,34 @@
   <title>Фотографии пользователей</title>
 </head>
 <body>
-  <header class="page-header">
-    <div class="page-header__nav-wrap">
+<header class="page-header page-header--simple">
+  <div class="page-header__nav">
+    <div class="page-header__nav-wrap container">
       <div class="logo">
-        <a class="logo__link" href="#">PINK</a>
+        <a class="logo__link" href="#">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
+            <source media="(min-width: 700px)" srcset="img/logo-pink-white-tablet.svg">
+            <img class="logo__img" src="img/logo-pink-white-mobile.svg" alt="logo">
+          </picture>
+        </a>
       </div>
       <nav class="navigation">
-        <a href="index.html" class="navigation__link">Главная</a>
-        <a href="photo.html" class="navigation__link">Фотографии</a>
-        <a href="form.html" class="navigation__link">Конкурс</a>
-        <a href="https://htmlacademy.ru/" class="navigation__link">HTML Academy</a>
+        <span class="navigation__toggle navigation__toggle--closed"></span>
+        <div class="navigation__link-wrap">
+          <a href="index.html" class="navigation__link">Главная</a>
+          <a href="photo.html" class="navigation__link">Фотографии</a>
+          <a href="form.html" class="navigation__link">Конкурс</a>
+          <a href="https://htmlacademy.ru/" class="navigation__link">HTML Academy</a>
+        </div>
       </nav>
     </div>
-    <h1 class="page-header__title">Фотографии пользователей</h1>
-  </header>
+  </div>
+  <h1 class="page-header__title page-header__title--photo">Фотографии пользователей</h1>
+</header>
 
 
+<div class="container">
   <article class="users-photos">
     <h2 class="users-photos__title">
       Взгляните на фотографии, которые выкладывают пользователи!
@@ -30,124 +42,216 @@
     </h2>
 
     <section class="post post--post-of-day">
-      <img class="post__img" src="http://lorempixel.com/280/180" alt="panorama">
+      <div class="post__img-wrap">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img\panorama-desktop.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+          <source media="(min-width: 700px)" srcset="img/panorama-tablet.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+          <img class="post__img" src="img/panorama-mobile.jpg" srcset="img/panorama-mobile@2x.jpg" alt="panorama">
+        </picture>
+      </div>
       <h3 class="post__user">
         Анна <span class="post__user-time">5 минут назад</span>
       </h3>
       <p class="post__text">
-        Прыгать или нет? Напишите в комментарии свой совет и смотрите
+        Прыгать или нет? Напишите в коментарии свой совет и смотрите
         прямую трансляцию в перископе, задавайте свои вопросы!
       </p>
-      <a href="#" class="post__like">Нравится: 215</a>
+      <div class="post__link-wrap">
+        <a href="#" class="post__like">Нравится: 215</a>
+        <button class="post__button" type="button"></button>
+      </div>
     </section>
 
-    <section class="post">
-      <img class="post__img" src="http://lorempixel.com/280/180" alt="car">
-      <h3 class="post__user">
-        Левон <span class="post__user-time">5 часов назад</span>
-      </h3>
-      <p class="post__text">
-        Вчера он на луну летал, сегодня в руки к нам попал.
-      </p>
-      <a href="#" class="post__like">Нравится: 356</a>
-    </section>
-
-    <section class="post">
-      <img class="post__img" src="http://lorempixel.com/280/180" alt="drums">
-      <h3 class="post__user">
-        Антон <span class="post__user-time">12 часов назад</span>
-      </h3>
-      <p class="post__text">
-        Соседи будут рады!
-      </p>
-      <a href="#" class="post__like">Нравится: 666</a>
-    </section>
-
-    <section class="post">
-      <img class="post__img" src="http://lorempixel.com/280/180" alt="windows">
-      <h3 class="post__user">
-        Борис <span class="post__user-time">20 часов назад</span>
-      </h3>
-      <p class="post__text">
-        Здесь могла быть ваша цитата о высоком и вечном.
-      </p>
-      <a href="#" class="post__like">Нравится: 215</a>
-    </section>
-
-    <section class="post">
-      <img class="post__img" src="http://lorempixel.com/280/180" alt="kubana">
-      <h3 class="post__user">
-        Сергей <span class="post__user-time">25 часов назад</span>
-      </h3>
-      <p class="post__text">
-        Самая кубанская в мире!
-      </p>
-      <a href="#" class="post__like">Нравится: 4</a>
-    </section>
-
-    <section class="post">
-      <img class="post__img" src="http://lorempixel.com/280/180" alt="mountain">
-      <h3 class="post__user">
-        Максим <span class="post__user-time">40 часов назад</span>
-      </h3>
-      <p class="post__text">
-        Где снег-то?
-      </p>
-      <a href="#" class="post__like">Нравится: 150</a>
-    </section>
-
-    <section class="post">
-      <img class="post__img" src="http://lorempixel.com/280/180" alt="air">
-      <h3 class="post__user">
-        Надежда <span class="post__user-time">45 часов назад</span>
-      </h3>
-      <p class="post__text">
-        Всем GM и взаимные лайки!
-      </p>
-      <a href="#" class="post__like">Нравится: 2560</a>
-    </section>
-  </article>
-
-
-
-  <section class="upload">
-    <h2 class="upload__title">
-      Затмите их всех! Выкладывайте все, что накопилось в телефоне!
-    </h2>
-    <form class="upload__form" name="upload" method="post" action="#" enctype="multipart/form-data">
-      <input class="upload__file" type="file" name="fileup" id="fileup">
-       <div class="filter">
-         <button class="filter__size" type="button"></button>
-         <button class="filter__color" type="button"></button>
-         <button class="filter__bright" type="button"></button>
-         <div class="filter__range">
-          <div class="filter__scale">
-            <div class="filter__bar"></div>
-          </div>
-          <div class="filter__toggle"></div>
+    <div class="post__wrap">
+      <section class="post">
+        <div class="post__img-wrap">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/photo-1-desktop.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
+            <source media="(min-width: 700px)" srcset="img/photo-1-tablet.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
+            <img class="post__img" src="img/photo-1-mobile.jpg" srcset="img/photo-1-mobile@2x.jpg" alt="car">
+          </picture>
         </div>
-       </div>
-      <button class="button" type="submit">Запостить</button>
-      <button class="button" type="reset">Отмена</button>
-    </form>
-  </section>
+        <h3 class="post__user">
+          Левон <span class="post__user-time">5 часов назад</span>
+        </h3>
+        <p class="post__text">
+          Вчера он на луну летал, сегодня в руки к нам попал.
+        </p>
+        <div class="post__link-wrap"><a href="#" class="post__like">Нравится: 356</a>
+        <button class="post__button" type="button"></button></div>
+      </section>
 
+      <section class="post">
+        <div class="post__img-wrap">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/photo-2-desktop.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
+            <source media="(min-width: 700px)" srcset="img/photo-2-tablet.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
+            <img class="post__img" src="img/photo-2-mobile.jpg" srcset="img/photo-2-mobile@2x.jpg" alt="drums">
+          </picture>
+        </div>
+        <h3 class="post__user">
+          Антон <span class="post__user-time">12 часов назад</span>
+        </h3>
+        <p class="post__text">
+          Соседи будут рады!
+        </p>
+        <div class="post__link-wrap"><a href="#" class="post__like">Нравится: 666</a>
+        <button class="post__button" type="button"></button></div>
+      </section>
 
+      <section class="post">
+        <div class="post__img-wrap">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/photo-3-desktop.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
+            <source media="(min-width: 700px)" srcset="img/photo-3-tablet.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
+            <img class="post__img" src="img/photo-3-mobile.jpg" srcset="img/photo-3-mobile@2x.jpg" alt="windows">
+          </picture>
+        </div>
+        <h3 class="post__user">
+          Борис <span class="post__user-time">20 часов назад</span>
+        </h3>
+        <p class="post__text">
+          Здесь могла быть ваша цитата о высоком и вечном.
+        </p>
+        <div class="post__link-wrap"><a href="#" class="post__like">Нравится: 215</a>
+        <button class="post__button" type="button"></button></div>
+      </section>
 
-  <footer class="social-footer">
-    <div class="social-footer__logo">
-      <a href="" class="social-footer__logo-link">PINK</a>
+      <section class="post">
+        <div class="post__img-wrap">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/photo-4-desktop.jpg 1x, img/photo-4-desktop@2x.jpg 2x">
+            <source media="(min-width: 700px)" srcset="img/photo-4-tablet.jpg 1x, img/photo-4-tablet@2x.jpg 2x">
+            <img class="post__img" src="img/photo-4-mobile.jpg" srcset="img/photo-4-mobile@2x.jpg" alt="kubana">
+          </picture>
+        </div>
+        <h3 class="post__user">
+          Сергей <span class="post__user-time">25 часов назад</span>
+        </h3>
+        <p class="post__text">
+          Самая кубанская в мире!
+        </p>
+        <div class="post__link-wrap"><a href="#" class="post__like">Нравится: 4</a>
+        <button class="post__button" type="button"></button></div>
+      </section>
+
+      <section class="post">
+        <div class="post__img-wrap">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/photo-5-desktop.jpg 1x, img/photo-5-desktop@2x.jpg 2x">
+            <source media="(min-width: 700px)" srcset="img/photo-5-tablet.jpg 1x, img/photo-5-tablet@2x.jpg 2x">
+            <img class="post__img" src="img/photo-5-mobile.jpg" srcset="img/photo-5-mobile@2x.jpg" alt="mountain">
+          </picture>
+        </div>
+        <h3 class="post__user">
+          Максим <span class="post__user-time">40 часов назад</span>
+        </h3>
+        <p class="post__text">
+          Где снег-то?
+        </p>
+        <div class="post__link-wrap"><a href="#" class="post__like">Нравится: 150</a>
+        <button class="post__button" type="button"></button></div>
+      </section>
+
+      <section class="post">
+        <div class="post__img-wrap">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/photo-6-desktop.jpg 1x, img/photo-6-desktop@2x.jpg 2x">
+            <source media="(min-width: 700px)" srcset="img/photo-6-tablet.jpg 1x, img/photo-6-tablet@2x.jpg 2x">
+            <img class="post__img" src="img/photo-6-mobile.jpg" srcset="img/photo-6-mobile@2x.jpg" alt="air">
+          </picture>
+        </div>
+        <h3 class="post__user">
+          Надежда <span class="post__user-time">45 часов назад</span>
+        </h3>
+        <p class="post__text">
+          Всем GM и взаимные лайки!
+        </p>
+        <div class="post__link-wrap"><a href="#" class="post__like">Нравится: 2560</a>
+        <button class="post__button" type="button"></button></div>
+      </section>
     </div>
-    <div class="social">
-      <a href="#" class="social__icon">Twitter</a>
-      <a href="#" class="social__icon">Facebook</a>
-      <a href="#" class="social__icon">Youtube</a>
+  </article>
+</div>
+<div class="container">
+  <h2 class="upload__title">
+  Затмите их всех!<br> Выкладывайте все, что накопилось в телефоне!
+  </h2>
+</div>
+<section class="upload">
+  <div class="container">
+    <div class="upload__wrap">
+      <div class="upload__img-wrap">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/photo-7-desktop.jpg 1x, img/photo-7-desktop@2x.jpg 2x">
+          <source media="(min-width: 700px)" srcset="img/photo-7-tablet.jpg 1x, img/photo-7-tablet@2x.jpg 2x">
+          <img class="upload__img" src="img/photo-7-mobile.jpg" srcset="img/photo-7-mobile@2x.jpg" alt="road">
+        </picture>
+      </div>
+      <form class="upload__form" name="upload" method="post" action="#" enctype="multipart/form-data">
+        <input class="upload__file" type="file" name="fileup" id="fileup">
+        <div class="filter">
+          <div class="filter__button-wrap">
+            <button class="filter__size" type="button">
+              <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"  x="0px" y="0px"
+	            width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+              <path fill="none" d="M0,0h48v48H0V0z"></path>
+              <path d="M34,30h4V14c0-2.21-1.79-4-4-4H18v4h16V30z M14,34V2h-4v8H2v4h8v20c0,2.21,1.79,4,4,4h20v8h4v-8h8v-4H14z"></path>
+            </svg>
+            </button>
+            <button class="filter__color" type="button">
+              <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"  x="0px" y="0px"
+	 width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+<path fill="none" d="M0,0h48v48H0V0z"></path>
+<path d="M33.12,17.88L15.24,0l-2.83,2.83l4.76,4.76L6.88,17.88c-1.17,1.17-1.17,3.07,0,4.24l11,11C18.46,33.71,19.23,34,20,34
+	s1.54-0.29,2.12-0.88l11-11C34.29,20.95,34.29,19.05,33.12,17.88z M10.41,20L20,10.42L29.59,20H10.41z M38,23c0,0-4,4.33-4,7
+	c0,2.21,1.79,4,4,4s4-1.79,4-4C42,27.33,38,23,38,23z"></path>
+<rect y="40" width="48" height="3"></rect>
+</svg>
+            </button>
+            <button class="filter__bright" type="button">
+              <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"  x="0px" y="0px"
+	 width="31.92px" height="31.92px" viewBox="-35.422 -7.96 31.92 31.92" enable-background="new -35.422 -7.96 31.92 31.92"
+	 xml:space="preserve">
+<path fill="#231F20" d="M-19.462-3.96c6.595,0,11.96,5.365,11.96,11.96s-5.365,11.96-11.96,11.96S-31.422,14.595-31.422,8
+	S-26.057-3.96-19.462-3.96 M-19.462-7.96c-8.814,0-15.96,7.145-15.96,15.96c0,8.813,7.146,15.96,15.96,15.96S-3.502,16.813-3.502,8
+	C-3.502-0.815-10.648-7.96-19.462-7.96L-19.462-7.96z"></path>
+<path d="M-19.462,16.331c4.706,0,8.52-3.813,8.52-8.52c0-4.705-3.813-8.519-8.52-8.519"></path>
+</svg>
+            </button>
+          </div>
+          <div class="filter__range">
+            <div class="filter__scale">
+            </div>
+            <div class="filter__toggle"></div>
+          </div>
+        </div>
+        <div class="upload-button__wrap">
+          <button class="button button--upload" type="submit">Запостить</button>
+          <button class="button button--upload" type="reset">Отмена</button>
+        </div>
+      </form>
     </div>
-    <div class="developer">
-      <span class="developer__text">Разработано</span>
-      <a href="#" class="developer__logo">HTML Academy</a>
+  </div>
+</section>
+
+
+  <footer class="social-footer social-footer--visible">
+    <div class="social-footer__wrap">
+      <div class="social-footer__logo">
+        <a href="" class="social-footer__logo-link">PINK</a>
+      </div>
+      <div class="social">
+        <a href="#" class="social__icon social__icon--twitter">Twitter</a>
+        <a href="#" class="social__icon social__icon--facebook">Facebook</a>
+        <a href="#" class="social__icon social__icon--youtube">Youtube</a>
+      </div>
+      <div class="developer">
+        <span class="developer__text">Разработано</span>
+        <a href="#" class="developer__logo">HTML Academy</a>
+      </div>
     </div>
   </footer>
-
+  <script src="js/main.js"></script>
 </body>
 </html>

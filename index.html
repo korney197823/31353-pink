@@ -10,16 +10,24 @@
 
 <header class="page-header">
   <div class="page-header__nav">
-    <div class="page-header__nav-wrap">
+    <div class="page-header__nav-wrap container">
       <div class="logo">
-        <a class="logo__link" href="#">LINK</a>
+        <a class="logo__link" href="#">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
+            <source media="(min-width: 700px)" srcset="img/logo-pink-white-tablet.svg">
+            <img class="logo__img" src="img/logo-pink-white-mobile.svg" alt="logo">
+          </picture>
+        </a>
       </div>
-      <nav class="navigation ">
+      <nav class="navigation">
         <span class="navigation__toggle navigation__toggle--closed"></span>
-        <a href="index.html" class="navigation__link">Главная</a>
-        <a href="photo.html" class="navigation__link">Фотографии</a>
-        <a href="form.html" class="navigation__link">Конкурс</a>
-        <a href="https://htmlacademy.ru/" class="navigation__link">HTML Academy</a>
+        <div class="navigation__link-wrap">
+          <a href="index.html" class="navigation__link">Главная</a>
+          <a href="photo.html" class="navigation__link">Фотографии</a>
+          <a href="form.html" class="navigation__link">Конкурс</a>
+          <a href="https://htmlacademy.ru/" class="navigation__link">HTML Academy</a>
+        </div>
       </nav>
     </div>
   </div>
@@ -199,5 +207,6 @@
       </div>
     </div>
   </footer>
+  <script src="js/main.js"></script>
 </body>
 </html>

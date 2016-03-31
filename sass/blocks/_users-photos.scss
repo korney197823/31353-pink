@@ -1,0 +1,18 @@
+.users-photos__title {
+  margin: 0;
+  padding-top: 45px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 50px;
+  text-align: center;
+  font-size: $font-small;
+  font-weight: normal;
+  line-height: $height-big;
+  @media ($tablet-width) {
+    font-size: $font-normal;
+    padding-top: 92px;
+    padding-bottom: 76px;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}
