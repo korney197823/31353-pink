@@ -20,6 +20,9 @@
     padding-bottom: 26px;
     border: 2px solid #e5e5e5;
   }
+  @media ($desktop-width) {
+    padding-bottom: 12px;
+  }
 }
 .contacts-block__wrap {
   @media ($tablet-width) {
@@ -29,6 +32,10 @@
   @media ($desktop-width) {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    padding-left: 58px;
+    padding-right: 58px;
+    padding-top: 10px;
   }
 
 }
@@ -38,7 +45,7 @@
     flex-direction: column-reverse;
   }
   @media ($desktop-width) {
-    width: calc(100%/2 - 95px);
+    width: calc(100%/2 - 34px);
   }
   .form__label {
     @media ($tablet-width) {
@@ -61,7 +68,7 @@
     flex-direction: column-reverse;
   }
   @media ($desktop-width) {
-    width: calc(100%/2 - 95px);
+    width: calc(100%/2 - 34px);
   }
   .form__label {
     @media ($tablet-width) {

@@ -31,6 +31,9 @@
       width: 300px;
       margin: 0;
     }
+    @media ($desktop-width) {
+      font-size: $font-normal;
+    }
   }
   &--upload {
     width: 100%;
@@ -47,5 +50,8 @@
     justify-content: space-between;
     align-items: center;
     order: 6;
+  }
+  @media ($desktop-width) {
+    width: 100%;
   }
 }
