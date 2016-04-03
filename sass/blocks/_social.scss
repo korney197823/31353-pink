@@ -20,6 +20,9 @@
   border: 3px solid $gray;
   background-position: 50% 50%;
   background-repeat: no-repeat;
+  &:hover {
+    border-color: $darkblue;
+  }
   &--twitter {
     background-image:  url("/img/icon-twitter.svg");
   }
