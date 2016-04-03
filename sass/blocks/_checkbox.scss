@@ -17,6 +17,16 @@
   padding-left: 68px;
   padding-bottom: 15px;
   cursor: pointer;
+  &:hover {
+    &:before {
+      border-color: $darkblue;
+    }
+  }
+  &:active {
+    &:before {
+      border-color: $pink;
+    }
+  }
   @media ($tablet-width) {
     padding-left: 58px;
   }

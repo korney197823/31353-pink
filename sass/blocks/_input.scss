@@ -1,3 +1,4 @@
+
 .input {
   width: 100%;
   display: flex;
@@ -59,5 +60,11 @@
   line-height: $height-big;
   @media ($tablet-width) {
     flex-grow: 1;
+  }
+  &:hover {
+    border-color: #283645;
+  }
+  &:focus {
+    border-color: $pink;
   }
 }

@@ -8,6 +8,16 @@
   padding-top: 15px;
   padding-bottom: 15px;
   cursor: pointer;
+  &:hover {
+    &:before {
+      border-color: $darkblue;
+    }
+  }
+  &:active {
+    &:before {
+      border-color: $pink;
+    }
+  }
   &:before {
     content: '';
     position: absolute;
