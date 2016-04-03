@@ -34,6 +34,20 @@
     padding-right: 18px;
   }
 }
+.input__control[type="tel"] {
+  @media ($tablet-width) {
+    background-image: url("/img/icon-phone.svg");
+    background-repeat: no-repeat;
+    background-position: 95.5%;
+  }
+}
+.input__control[type="email"] {
+  @media ($tablet-width) {
+    background-image: url("/img/icon-mail.svg");
+    background-repeat: no-repeat;
+    background-position: 95.5%;
+  }
+}
 
 .input__control {
   padding-bottom: 15px;

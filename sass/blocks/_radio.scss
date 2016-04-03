@@ -28,6 +28,18 @@
     margin-left: 16px;
   }
 }
+.radio__control:checked + .radio__label::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: $pink;
+  left: 11px;
+  top: 50%;
+  transform: translateY(-50%);
+}
 .radio__control {
   display: none;
   position: relative;

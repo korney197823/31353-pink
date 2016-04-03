@@ -7,6 +7,9 @@
     padding-top: 8px;
     text-align: right;
   }
+  @media ($desktop-width) {
+    width: 200px;
+  }
 }
 .developer__text {
   line-height: 36px;

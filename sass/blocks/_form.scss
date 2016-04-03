@@ -84,15 +84,18 @@
 
 .form__textarea {
   width: 280px;
+  min-height: 198px;
   padding-bottom: 26px;
   border: 2px solid #e5e5e5;
   @media ($tablet-width) {
     width: 500px;
+    min-height: 193px;
     margin: 0 auto;
     padding-bottom: 18px;
   }
   @media ($desktop-width) {
     width: 820px;
+    min-height: 125px;
     padding-bottom: 15px;
   }
 }

@@ -65,34 +65,28 @@
             </legend>
           <div class="checkbox-block__wrap">
             <div class="checkbox">
-              <label class="checkbox__label">Сделал селфи с акулой
-                <input class="checkbox__control" type="checkbox">
-              </label>
+              <input class="checkbox__control" type="checkbox" id="selfy" checked>
+              <label class="checkbox__label" for="selfy">Сделал селфи с акулой</label>
             </div>
             <div class="checkbox">
-              <label class="checkbox__label">Обгорел на пляже
-                <input class="checkbox__control" type="checkbox">
-              </label>
+              <input class="checkbox__control" type="checkbox" id="beach" checked>
+              <label class="checkbox__label" for="beach">Обгорел на пляже</label>
             </div>
             <div class="checkbox">
-              <label class="checkbox__label">Видел Чака Норриса
-                <input class="checkbox__control" type="checkbox">
-              </label>
+              <input class="checkbox__control" type="checkbox" id="chack">
+              <label class="checkbox__label" for="chack">Видел Чака Норриса</label>
             </div>
             <div class="checkbox">
-              <label class="checkbox__label">Накупил сувениров
-                <input class="checkbox__control" type="checkbox">
-              </label>
+              <input class="checkbox__control" type="checkbox" id="souvenir">
+              <label class="checkbox__label" for="souvenir">Накупил сувениров</label>
             </div>
             <div class="checkbox">
-              <label class="checkbox__label">Удержал башню
-                <input class="checkbox__control" type="checkbox">
-              </label>
+              <input class="checkbox__control" type="checkbox" id="tower" checked>
+              <label class="checkbox__label" for="tower">Удержал башню</label>
             </div>
             <div class="checkbox">
-              <label class="checkbox__label">Разгромил отель
-                <input class="checkbox__control" type="checkbox">
-              </label>
+              <input class="checkbox__control" type="checkbox" id="hotel">
+              <label class="checkbox__label" for="hotel">Разгромил отель</label>
             </div>
           </div>
         </fieldset>
@@ -121,19 +115,16 @@
             </legend>
           <div class="radio-block__wrap">
             <div class="radio">
-              <label class="radio__label">Pink для IOS
-                <input class="radio__control" type="radio">
-              </label>
+              <input class="radio__control" type="radio" id="ios" checked>
+              <label class="radio__label" for="ios">Pink для IOS</label>
             </div>
             <div class="radio">
-              <label class="radio__label" for="android">Pink на Android
-                <input class="radio__control" type="radio" id="android">
-              </label>
+              <input class="radio__control" type="radio" id="android">
+              <label class="radio__label" for="android">Pink на Android</label>
             </div>
             <div class="radio">
-              <label class="radio__label">Windows Phone
-                <input class="radio__control" type="radio">
-              </label>
+              <input class="radio__control" type="radio" id="windows">
+              <label class="radio__label" for="windows">Windows Phone</label>
             </div>
           </div>
         </fieldset>
@@ -143,7 +134,7 @@
           <legend class="form__subtitle">
             Опишите свои эмоции
           </legend>
-        <textarea class="form__textarea" name="emotion" id="emotion" cols="30" rows="7"
+        <textarea class="form__textarea" name="emotion" id="emotion" cols="30"
                   placeholder="Можно прям в красках, не стесняясь в выражениях">
         </textarea>
         </fieldset>
@@ -209,26 +200,34 @@
   </footer>
 
   <section class="modal">
-    <h3 class="modal__title">
+    <div class="modal__container">
+      <h3 class="modal__title">
       Что-то пошло не так!
-    </h3>
-    <p class="modal__text">
-      Проверьте поля, выделенные красным,
-      скорее всего вы забыли их заполнить
-    </p>
-    <button class="button button--form" type="button" >OK</button>
+      </h3>
+      <p class="modal__text">
+        Проверьте поля, выделенные красным,
+        скорее всего вы забыли их заполнить
+      </p>
+      <div class="modal__button-wrap">
+        <button class="button button--form" type="button">OK</button>
+      </div>
+    </div>
   </section>
 
-<section class="modal">
-    <h3 class="modal__title">
-      Ваша заявка отравлена
-    </h3>
-    <p class="modal__text">
-      Спасибо за ваше участие, ваша заявка
-      уже поступила к нам. В ближайшее время
-      мы рассмотрим ее и оповестим вас.
-    </p>
-    <button class="button button--form" type="button">Закрыть окно</button>
+  <section class="modal modal--success">
+    <div class="modal__container">
+      <h3 class="modal__title">
+        Ваша заявка отправлена
+      </h3>
+      <p class="modal__text">
+        Спасибо за ваше участие, ваша заявка
+        уже поступила к нам. В ближайшее время
+        мы рассмотрим ее и оповестим вас.
+      </p>
+      <div class="modal__button-wrap modal__button-wrap--visible">
+        <button class="button button--form button--modal" type="button">Закрыть окно</button>
+      </div>
+    </div>
   </section>
   <script src="js/main.js"></script>
 </body>
