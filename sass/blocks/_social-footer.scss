@@ -34,4 +34,12 @@
 
 .social-footer__logo-link {
   display: block;
+  &:active {
+    opacity: 0.3;
+  }
+}
+.social-footer__logo-link .pink {
+  &:hover {
+    fill: $pink;
+  }
 }

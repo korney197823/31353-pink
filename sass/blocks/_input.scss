@@ -41,12 +41,18 @@
     background-repeat: no-repeat;
     background-position: 95.5%;
   }
+  @media ($desktop-width) {
+    background-position: 94%;
+  }
 }
 .input__control[type="email"] {
   @media ($tablet-width) {
     background-image: url("/img/icon-mail.svg");
     background-repeat: no-repeat;
     background-position: 95.5%;
+  }
+  @media ($desktop-width) {
+    background-position: 94%;
   }
 }
 

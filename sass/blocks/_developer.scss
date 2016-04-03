@@ -26,3 +26,11 @@
   vertical-align: top;
   font-size: 0;
 }
+.developer__img {
+  &:hover {
+    fill: $darkblue;
+  }
+  &:active {
+    opacity: 0.3;
+  }
+}

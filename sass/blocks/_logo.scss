@@ -10,12 +10,12 @@
 
 .logo__link {
   display: block;
-  transform: translateY(88%);
+  padding-top: 21px;
   @media ($tablet-width) {
-    transform: translateY(62%);
+    padding-top: 29px;
   }
   @media ($desktop-width) {
-    transform: translateY(-10%);
+    padding-top: 0;
   }
 }
 

@@ -6,4 +6,5 @@ var menu = document.querySelector('.navigation'),
 
 menuOpener.addEventListener('click', function() {
   menu.classList.toggle('navigation--open');
+  menuOpener.classList.toggle('.navigation__toggle--opened');
 });
