@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
   <title>Пинк</title>
 </head>
 <body>
@@ -23,6 +24,7 @@
       <nav class="navigation">
         <span class="navigation__toggle navigation__toggle--closed"></span>
         <div class="navigation__link-wrap">
+          <a class="navigation__link"></a>
           <a href="index.html" class="navigation__link">Главная</a>
           <a href="photo.html" class="navigation__link">Фотографии</a>
           <a href="form.html" class="navigation__link">Конкурс</a>
@@ -188,8 +190,10 @@
       </div>
     </div>
   </div>
-  <div class="map">
-  </div>
+  <section class="map" id="map">
+    <!--Интерактивная карта-->
+    <div id="myMap"></div>
+  </section>
   </footer>
   <footer class="social-footer">
     <div class="social-footer__wrap">
@@ -208,5 +212,6 @@
     </div>
   </footer>
   <script src="js/main.js"></script>
+  <script src="js/map.js"></script>
 </body>
 </html>
