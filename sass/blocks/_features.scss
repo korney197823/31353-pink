@@ -2,27 +2,19 @@
 }
 
 .features__group {
-  //background-color: $gray;
   background-image: linear-gradient(175deg, $white 4%, $gray 4%);
+  @media ($tablet-width) {
+    background-image: linear-gradient(176deg, $white 9%, $gray 9%);
+  }
 }
 
 .features__wrap-title {
-  @include container-fluid;
-  @media ($mobile-width-only) {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
   @media ($desktop-width) {
     margin-bottom: 37px;
   }
 }
 
 .features__wrap {
-  @include container-fluid;
-  @media ($mobile-width-only) {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
   @media ($tablet-width) {
     display: flex;
     flex-direction: row-reverse;
