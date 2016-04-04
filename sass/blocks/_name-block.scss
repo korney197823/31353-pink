@@ -1,15 +1,26 @@
 .name-block {
   margin: 0;
-  padding: 0 20px 30px 20px;
+  padding-bottom: 42px;
+  padding-left: 0;
+  padding-right: 0;
   border: none;
   @media ($tablet-width) {
-    padding-left: 0;
-    padding-right: 0;
+    margin-bottom: 52px;
     padding-bottom: 5px;
+  }
+  @media ($desktop-width) {
+    width: calc(100%/2 - 35px);
+    padding-top: 12px;
   }
 }
 .name-block__wrap {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  .input:not(:first-of-type){
+    margin-top: 12px;
+    @media ($tablet-width) {
+      margin-top: 52px;
+    }
+  }
 }

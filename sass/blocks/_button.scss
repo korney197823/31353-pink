@@ -27,9 +27,18 @@
     border-radius: 3px;
     line-height: $height-big;
     text-transform: uppercase;
+    &:hover {
+      background: #1c9b5e;
+    }
+    &:active {
+      color: #7dbd99;
+    }
     @media ($tablet-width) {
       width: 300px;
       margin: 0;
+    }
+    @media ($desktop-width) {
+      font-size: $font-normal;
     }
   }
   &--upload {
@@ -39,6 +48,12 @@
     color: $pink;
     border-color: $pink;
   }
+  &--modal {
+    margin: 0 auto;
+    @media ($desktop-width) {
+      width: 460px;
+    }
+  }
 
 }
 .button__wrap {
@@ -47,5 +62,8 @@
     justify-content: space-between;
     align-items: center;
     order: 6;
+  }
+  @media ($desktop-width) {
+    width: 100%;
   }
 }

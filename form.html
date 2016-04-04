@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/normalize.css">
+  <!-- <link rel="stylesheet" href="css/normalize.css"> -->
   <link rel="stylesheet" href="css/style.css">
   <title>Форма конкурса</title>
 </head>
@@ -23,6 +23,7 @@
         <nav class="navigation">
           <span class="navigation__toggle navigation__toggle--closed"></span>
           <div class="navigation__link-wrap">
+            <a class="navigation__link"></a>
             <a href="index.html" class="navigation__link">Главная</a>
             <a href="photo.html" class="navigation__link">Фотографии</a>
             <a href="form.html" class="navigation__link">Конкурс</a>
@@ -35,91 +36,106 @@
   </header>
 
     <form class="form" action="#" method="post">
-      <h2 class="form__title">
-        Поделитесь своей историей и получите шанс выйграть ценный приз -
+      <h2 class="form__title container">
+        Поделитесь своей историей и получите шанс выйграть ценный приз &mdash;
         1000 миль на вашу бонусную карту!
         <span class="form__title-addtext">Пожалуйста, заполните форму ниже:</span>
       </h2>
-      <div class="form__wrap">
+      <div class="form__wrap container">
         <fieldset class="name-block">
           <div class="name-block__wrap">
-            <label class="form__label" for="name">Имя:</label>
-            <input class="form__text" type="text" placeholder="Введите ваше имя" id="name">
-            <label class="form__label" for="surname">Фамилия:</label>
-            <input class="form__text" type="text" placeholder="Укажите фамилию" id="surname">
-            <label class="form__label" for="middlename">Отчество:</label>
-            <input class="form__text" type="text" placeholder="Ну и отчество тоже" id="middlename">
+            <div class="input">
+              <label class="input__label" for="name">Имя:</label>
+              <input class="input__control" type="text" placeholder="Введите ваше имя" id="name">
+            </div>
+            <div class="input">
+              <label class="input__label" for="surname">Фамилия:</label>
+              <input class="input__control" type="text" placeholder="Укажите фамилию" id="surname">
+            </div>
+            <div class="input">
+              <label class="input__label" for="middlename">Отчество:</label>
+              <input class="input__control" type="text" placeholder="Ну и отчество тоже" id="middlename">
+            </div>
           </div>
         </fieldset>
 
 
-        <fieldset class="checkbox-block">
+        <fieldset class="checkbox-block ">
             <legend class="form__subtitle">
               Ваши безбашенные достижения в путешествии
             </legend>
           <div class="checkbox-block__wrap">
-            <label class="form__label-checkbox">Сделал селфи с акулой
-              <input class="form__checkbox" type="checkbox">
-            </label>
-            <label class="form__label-checkbox">Обгорел на пляже
-              <input class="form__checkbox" type="checkbox">
-            </label>
-            <label class="form__label-checkbox">Видел Чака Норриса
-              <input class="form__checkbox" type="checkbox">
-            </label>
-            <label class="form__label-checkbox">Накупил сувениров
-              <input class="form__checkbox" type="checkbox">
-            </label>
-            <label class="form__label-checkbox">Удержал башню
-              <input class="form__checkbox" type="checkbox">
-            </label>
-            <label class="form__label-checkbox">Разгромил отель
-              <input class="form__checkbox" type="checkbox">
-            </label>
+            <div class="checkbox">
+              <input class="checkbox__control" type="checkbox" id="selfy" checked>
+              <label class="checkbox__label" for="selfy">Сделал селфи с акулой</label>
+            </div>
+            <div class="checkbox">
+              <input class="checkbox__control" type="checkbox" id="beach" checked>
+              <label class="checkbox__label" for="beach">Обгорел на пляже</label>
+            </div>
+            <div class="checkbox">
+              <input class="checkbox__control" type="checkbox" id="chack">
+              <label class="checkbox__label" for="chack">Видел Чака Норриса</label>
+            </div>
+            <div class="checkbox">
+              <input class="checkbox__control" type="checkbox" id="souvenir">
+              <label class="checkbox__label" for="souvenir">Накупил сувениров</label>
+            </div>
+            <div class="checkbox">
+              <input class="checkbox__control" type="checkbox" id="tower" checked>
+              <label class="checkbox__label" for="tower">Удержал башню</label>
+            </div>
+            <div class="checkbox">
+              <input class="checkbox__control" type="checkbox" id="hotel">
+              <label class="checkbox__label" for="hotel">Разгромил отель</label>
+            </div>
           </div>
         </fieldset>
 
 
-        <fieldset class="contacts-block">
+        <fieldset class="contacts-block ">
           <legend class="form__subtitle">
             Контактная информация
           </legend>
           <div class="contacts-block__wrap">
-            <div class="contacts-block__wrap-phone">
-              <label class="form__label" for="phone">Номерок телефончика</label>
-              <input class="form__text" type="tel" id="phone" placeholder="Номер, пожалуйста">
+            <div class="input input--contact">
+              <label class="input__label" for="phone">Номерок телефончика</label>
+              <input class="input__control" type="tel" id="phone" placeholder="Номер, пожалуйста">
             </div>
-            <div class="contacts-block__wrap-email">
-              <label class="form__label" for="email">Адресок почты</label>
-              <input class="form__text" type="email" id="email" placeholder="E-mail, пожалуйста">
+            <div class="input input--contact">
+              <label class="input__label" for="email">Адресок почты</label>
+              <input class="input__control" type="email" id="email" placeholder="E-mail, пожалуйста">
             </div>
           </div>
         </fieldset>
 
 
-        <fieldset class="radio-block">
+        <fieldset class="radio-block ">
             <legend class="form__subtitle">
               С каким приложением путешествовали?
             </legend>
           <div class="radio-block__wrap">
-            <label class="form__label-radio">Pink для IOS
-              <input class="form__radio" type="radio">
-            </label>
-            <label class="form__label-radio" for="android">Pink на Android
-              <input class="form__radio" type="radio" id="android">
-            </label>
-            <label class="form__label-radio">Windows Phone
-              <input class="form__radio" type="radio">
-            </label>
+            <div class="radio">
+              <input class="radio__control" type="radio" id="ios" checked>
+              <label class="radio__label" for="ios">Pink для IOS</label>
+            </div>
+            <div class="radio">
+              <input class="radio__control" type="radio" id="android">
+              <label class="radio__label" for="android">Pink на Android</label>
+            </div>
+            <div class="radio">
+              <input class="radio__control" type="radio" id="windows">
+              <label class="radio__label" for="windows">Windows Phone</label>
+            </div>
           </div>
         </fieldset>
 
 
-        <fieldset class="text-block">
+        <fieldset class="text-block ">
           <legend class="form__subtitle">
             Опишите свои эмоции
           </legend>
-        <textarea class="form__textarea" name="emotion" id="emotion" cols="30" rows="7"
+        <textarea class="form__textarea" name="emotion" id="emotion" cols="30"
                   placeholder="Можно прям в красках, не стесняясь в выражениях">
         </textarea>
         </fieldset>
@@ -132,9 +148,43 @@
 
 
   <footer class="social-footer social-footer--visible">
-    <div class="social-footer__wrap">
+    <div class="social-footer__wrap container">
       <div class="social-footer__logo">
-        <a href="" class="social-footer__logo-link">PINK</a>
+        <a href="" class="social-footer__logo-link">
+          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+               x="0px" y="0px"
+	 width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375" enable-background="new 0 0 146.3 40.375" xml:space="preserve">
+<g class="pink" fill="#283645">
+	<path  d="M71.874,18.661c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.146v0.063
+		c0,4.86-4.057,7.373-8.854,7.373h-5.475v6.825c0,0.708-0.58,1.287-1.289,1.287c-0.676,0-1.256-0.58-1.256-1.287L71.874,18.661
+		L71.874,18.661z M79.988,29.641c3.734,0,6.182-1.996,6.182-4.959v-0.062c0-3.221-2.414-4.894-6.053-4.894h-5.699v9.917h5.57V29.641
+		z"></path>
+	<path  d="M93.603,18.5c0-0.708,0.579-1.288,1.255-1.288c0.709,0,1.288,0.58,1.288,1.288v20.283
+		c0,0.708-0.579,1.287-1.288,1.287c-0.676,0-1.255-0.579-1.255-1.287V18.5z"></path>
+	<path  d="M102.744,18.532c0-0.676,0.58-1.256,1.256-1.256h0.354c0.58,0,0.935,0.29,1.288,0.74l13.684,17.45V18.468
+		c0-0.676,0.547-1.256,1.256-1.256c0.676,0,1.225,0.58,1.225,1.256v20.349c0,0.677-0.48,1.19-1.158,1.19h-0.129
+		c-0.548,0-0.936-0.321-1.318-0.772l-13.976-17.867v17.449c0,0.677-0.547,1.257-1.257,1.257c-0.676,0-1.223-0.58-1.223-1.257V18.532
+		H102.744z"></path>
+	<path  d="M128.173,18.5c0-0.708,0.58-1.288,1.257-1.288c0.708,0,1.286,0.58,1.286,1.288v12.331l12.848-13.168
+		c0.29-0.257,0.579-0.451,0.998-0.451c0.676,0,1.225,0.612,1.225,1.256c0,0.354-0.162,0.644-0.42,0.901l-7.984,7.92l8.564,10.561
+		c0.225,0.291,0.354,0.547,0.354,0.936c0,0.676-0.577,1.288-1.285,1.288c-0.482,0-0.807-0.259-1.03-0.58l-8.401-10.464l-4.863,4.861
+		v4.895c0,0.708-0.578,1.288-1.286,1.288c-0.677,0-1.257-0.58-1.257-1.288V18.5H128.173z"></path>
+</g>
+<path fill="#FFFFFF" d="M60.498,28.266"></path>
+<path fill="#D22856" d="M60.462,28.016c-0.002-0.009-5.175-21.365-5.175-21.365C54.926,4.303,52.694,0,46.688,0
+	c-0.829,0-1.5,0.671-1.5,1.5s0.671,1.5,1.5,1.5c4.856,0,5.575,3.729,5.639,4.143l4.767,19.701h-2.073
+	c-0.742-5.927-5.802-10.531-11.927-10.531s-11.186,4.604-11.927,10.531h-1.82c-0.741-5.927-5.802-10.531-11.927-10.531
+	S6.235,20.917,5.493,26.844H3.42L8.187,7.143C8.25,6.729,8.97,3,13.826,3c0.829,0,1.5-0.671,1.5-1.5S14.655,0,13.826,0
+	C7.82,0,5.588,4.303,5.227,6.651c0,0-5.173,21.356-5.175,21.365c-0.266,1.109,0.531,1.826,1.426,1.826
+	c0.012,0,0.023,0.004,0.036,0.004h3.982c0.741,5.926,5.802,10.53,11.927,10.53s11.185-4.604,11.927-10.53h1.814
+	c0.742,5.926,5.802,10.53,11.927,10.53s11.186-4.604,11.927-10.53H59c0.012,0,0.023-0.004,0.036-0.004
+	C59.931,29.842,60.728,29.125,60.462,28.016z M26.315,29.844c-0.715,4.272-4.421,7.531-8.896,7.531s-8.18-3.259-8.896-7.531
+	c-0.082-0.488-0.135-0.988-0.135-1.5s0.053-1.011,0.135-1.5c0.715-4.271,4.421-7.531,8.896-7.531s8.18,3.26,8.896,7.531
+	c0.082,0.489,0.135,0.988,0.135,1.5S26.397,29.355,26.315,29.844z M51.99,29.844c-0.716,4.272-4.421,7.531-8.896,7.531
+	c-4.475,0-8.181-3.259-8.896-7.531c-0.082-0.488-0.135-0.988-0.135-1.5s0.053-1.011,0.135-1.5c0.716-4.271,4.421-7.531,8.896-7.531
+	c4.475,0,8.181,3.26,8.896,7.531c0.082,0.489,0.135,0.988,0.135,1.5S52.072,29.355,51.99,29.844z"></path>
+</svg>
+        </a>
       </div>
       <div class="social">
         <a href="#" class="social__icon social__icon--twitter">Twitter</a>
@@ -143,32 +193,45 @@
       </div>
       <div class="developer">
         <span class="developer__text">Разработано</span>
-        <a href="#" class="developer__logo">HTML Academy</a>
+        <a href="#" class="developer__logo">
+          <svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
+            <path class="developer__img" fill="#d22856" d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z">
+            </path>
+          </svg>
+        </a>
       </div>
     </div>
   </footer>
 
   <section class="modal">
-    <h3 class="modal__title">
+    <div class="modal__container">
+      <h3 class="modal__title">
       Что-то пошло не так!
-    </h3>
-    <p class="modal__text">
-      Проверьте поля, выделенные красным,
-      скорее всего вы забыли их заполнить
-    </p>
-    <button class="button button--form" type="button" >OK</button>
+      </h3>
+      <p class="modal__text">
+        Проверьте поля, выделенные красным,
+        скорее всего вы забыли их заполнить
+      </p>
+      <div class="modal__button-wrap">
+        <button class="button button--form" type="button">OK</button>
+      </div>
+    </div>
   </section>
 
-<section class="modal">
-    <h3 class="modal__title">
-      Ваша заявка отравлена
-    </h3>
-    <p class="modal__text">
-      Спасибо за ваше участие, ваша заявка
-      уже поступила к нам. В ближайшее время
-      мы рассмотрим ее и оповестим вас.
-    </p>
-    <button class="button button--form" type="button">Закрыть окно</button>
+  <section class="modal modal--success">
+    <div class="modal__container">
+      <h3 class="modal__title">
+        Ваша заявка отправлена
+      </h3>
+      <p class="modal__text">
+        Спасибо за ваше участие, ваша заявка
+        уже поступила к нам. В ближайшее время
+        мы рассмотрим ее и оповестим вас.
+      </p>
+      <div class="modal__button-wrap modal__button-wrap--visible">
+        <button class="button button--form button--modal" type="button">Закрыть окно</button>
+      </div>
+    </div>
   </section>
   <script src="js/main.js"></script>
 </body>

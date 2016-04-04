@@ -1,0 +1,56 @@
+.radio:not(:first-of-type) {
+  margin-top: 21px;
+}
+.radio__label {
+  position: relative;
+  display: block;
+  padding-left: 68px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  cursor: pointer;
+  &:hover {
+    &:before {
+      border-color: $darkblue;
+    }
+  }
+  &:active {
+    &:before {
+      border-color: $pink;
+    }
+  }
+  &:before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 38px;
+    height: 38px;
+    background-color: $white;
+    border: 2px solid #e5e5e5;
+    border-radius: 50%;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  @media ($tablet-width) {
+    padding-left: 58px;
+  }
+  @media ($desktop-width) {
+    margin-left: 16px;
+  }
+}
+.radio__control:checked + .radio__label::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: $pink;
+  left: 11px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.radio__control {
+  display: none;
+  position: relative;
+}

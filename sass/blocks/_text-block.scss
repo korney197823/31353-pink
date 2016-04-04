@@ -3,9 +3,9 @@
   position: relative;
   margin: 0;
   padding-top: 92px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 47px;
+  padding-bottom: 48px;
+  padding-left: 0;
+  padding-right: 0;
   border: none;
   @media ($tablet-width) {
     order: 5;
@@ -14,8 +14,13 @@
     padding-bottom: 51px;
     border: 2px solid #e5e5e5;
   }
+  @media ($desktop-width) {
+    width: 100%;
+    padding-bottom: 43px;
+    margin-bottom: 65px;
+  }
   .form__subtitle {
     top: 39px;
-    left: 38px;
+    left: 18px;
   }
 }

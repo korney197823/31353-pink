@@ -1,16 +1,35 @@
 .checkbox-block {
-  display: flex;
   position: relative;
   margin: 0;
-  padding: 119px 20px 0 20px;
+  margin-right: -$container-padding-mobile;
+  margin-left: -$container-padding-mobile;
+  padding-top: 104px;
+  padding-left: 21px;
+  padding-right: 21px;
+  padding-bottom: 43px;
   border: none;
   background-color: $gray;
   @media ($tablet-width) {
     order: 4;
     margin-bottom: 55px;
-    padding-top: 52px;
+    margin-left: 0;
+    margin-right: 0;
+    padding-top: 35px;
     padding-left: 59px;
     background-color: $white;
     border: 2px solid #e5e5e5;
+  }
+  @media ($desktop-width) {
+    width: 100%;
+    margin-bottom: 56px;
+    padding-top: 8px;
+  }
+}
+.checkbox-block__wrap {
+  @media ($desktop-width) {
+    height: 170px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
   }
 }
