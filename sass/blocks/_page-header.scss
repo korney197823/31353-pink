@@ -28,8 +28,16 @@
       }
   }
   @media ($desktop-width) {
-    background-image: url("/img/bg-back-desktop.jpg");
-    background-position: 0 0;
+    background-image:
+      url("/img/iphone-hand-desktop@1x.png"),
+      url("/img/bg-back-desktop.jpg");
+    background-position:
+      147px 210px,
+      0 0;
+    @media #{$retina} {
+      background-image:
+        url("/img/iphone-hand-desktop@2x.png");
+    }
   }
 }
 
