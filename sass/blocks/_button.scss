@@ -19,6 +19,15 @@
     font-size: 21px;
     font-weight: bold;
   }
+  &--download {
+    &:hover {
+      background-color: $white;
+      color: $pink;
+    }
+    &:active {
+      color: lighten($pink, 30%);
+    }
+  }
   &--form {
     width: 280px;
     margin: 0 auto;
