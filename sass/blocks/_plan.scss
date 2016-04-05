@@ -14,7 +14,13 @@
 .plan--name-column {
   display: none;
   @media ($tablet-width) {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-color: #f2f2f2;
+    .plan__items {
+      background-color: #fff;
+    }
   }
 }
 .plan__title {
@@ -29,8 +35,8 @@
     line-height: 34px;
     padding: 18px 0;
   }
-  .plan__title--empty {
-
+  &--empty {
+    display: none;
   }
 }
 
@@ -85,7 +91,6 @@
   text-transform: uppercase;
   font-size: $font-small;
   line-height: $height-big;
-
   @media ($tablet-width) {
     width: 156px;
     padding: 7px 17px;
@@ -96,6 +101,33 @@
     width: 235px;
     padding: 14px 21px;
     font-size: $font-normal;
+  }
+  &--included {
+    background-repeat: no-repeat;
+    background-image: url("/img/icon-yes-plan.svg");
+    background-position: 231px 25px;
+    @media ($tablet-width) {
+      background-position: 63px 19px;
+    }
+    @media ($desktop-width) {
+      background-position: 105px 26px;
+    }
+  }
+  &--not-included {
+    background-repeat: no-repeat;
+    background-image: url("/img/icon-no.svg");
+    background-position: 230px 14px;
+    @media ($tablet-width) {
+      background-position: 63px 11px;
+    }
+    @media ($desktop-width) {
+      background-position: 104px 19px;
+    }
+  }
+}
+.plan__text:not(.plan__text--first-column) {
+  @media ($tablet-width) {
+    visibility: hidden;
   }
 }
 
