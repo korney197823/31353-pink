@@ -40,6 +40,9 @@
   font-size: 30px;
   font-weight: bold;
   line-height: 36px;
+  @media ($tablet-width) {
+    margin-top: 96px;
+  }
   @media ($desktop-width) {
     margin-top: 122px;
     & br {

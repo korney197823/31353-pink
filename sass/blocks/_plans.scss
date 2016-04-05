@@ -5,10 +5,12 @@
   background-image: linear-gradient(176deg, $white 5%, $gray 5%);
   @media ($tablet-width) {
     padding-bottom: 71px;
+    background-image: linear-gradient(176deg, #ffffff 12%, #f2f2f2 12%);
   }
   @media ($desktop-width) {
     padding-top: 150px;
     padding-bottom: 95px;
+    background-image: linear-gradient(176deg, $white 14%, $gray 14%);
   }
 }
 .plans__wrap {
