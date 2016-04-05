@@ -14,7 +14,7 @@
     display: flex;
   }
   @media ($desktop-width) {
-    padding-bottom: 112px;
+    padding-bottom: 65px;
   }
 }
 
@@ -27,6 +27,8 @@
   background-position: 4px 59px;
   @media ($desktop-width) {
     width: 39%;
+    background-size: 81%;
+    background-position: 2px 33px;
   }
 }
 .research__time-circle {
@@ -38,6 +40,13 @@
   border: 14px solid $pink;
   border-radius: 50%;
   text-align: center;
+  @media ($desktop-width) {
+    width: 253px;
+    height: 253px;
+    top: 100px;
+    left: 23px;
+    border: 16px solid $pink;
+  }
 }
 .research__time-item {
   position: absolute;
@@ -46,6 +55,11 @@
   font-size: 96px;
   font-weight: bold;
   color: $pink;
+  @media ($desktop-width) {
+    top: 94px;
+    left: 41px;
+    font-size: 120px;
+  }
 }
 
 .research__wrap-description {
