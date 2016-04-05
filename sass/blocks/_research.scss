@@ -12,7 +12,6 @@
   @include container-fluid;
   @media ($tablet-width) {
     display: flex;
-    padding-bottom: 50px;
   }
   @media ($desktop-width) {
     padding-bottom: 112px;
@@ -20,15 +19,38 @@
 }
 
 .research__time {
+  position: relative;
   width: 50%;
+  background-image: url("/img/icon-timer.svg");
+  background-repeat: no-repeat;
+  background-size: 77%;
+  background-position: 4px 59px;
   @media ($desktop-width) {
     width: 39%;
   }
-;
+}
+.research__time-circle {
+  position: absolute;
+  top: 115px;
+  left: 20px;
+  width: 204px;
+  height: 204px;
+  border: 14px solid $pink;
+  border-radius: 50%;
+  text-align: center;
+}
+.research__time-item {
+  position: absolute;
+  top: 71px;
+  left: 32px;
+  font-size: 96px;
+  font-weight: bold;
+  color: $pink;
 }
 
 .research__wrap-description {
   width: 50%;
+  padding-bottom: 50px;
   @media ($desktop-width) {
     width: 61%;
   }
