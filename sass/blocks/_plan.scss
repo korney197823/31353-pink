@@ -4,6 +4,9 @@
   &:last-of-type .plan__option {
     border-right: 2px solid #e7e7e7;
   }
+  &--base {
+    z-index: 999;
+  }
   @media ($tablet-width) {
     width: 156px;
   }
@@ -145,4 +148,3 @@
     visibility: hidden;
   }
 }
-
