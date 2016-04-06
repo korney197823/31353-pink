@@ -38,7 +38,22 @@
   &--empty {
     display: none;
   }
+  &--hit {
+    position: relative;
+  }
+  &--hit::before {
+    position: absolute;
+    left: -33px;
+    top: 13px;
+    content: 'ХИТ';
+    width: 108px;
+    transform: rotate(-45deg);
+    background-color: $pink;
+    color: $white;
+    font-size: 14px;
+  }
 }
+
 
 .plan__name {
   display: block;
