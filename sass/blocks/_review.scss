@@ -14,7 +14,44 @@
   }
 }
 
-.review__wrap {
-
+.review__input {
+  display: none;
 }
+#review1:checked ~ .review-slider .review-slider__slide:nth-child(1) {
+  display: block;
+  @media ($tablet-width) {
+    display: flex;
+  }
+}
+#review2:checked ~ .review-slider .review-slider__slide:nth-child(2) {
+  display: block;
+  @media ($tablet-width) {
+    display: flex;
+  }
+}
+#review3:checked ~ .review-slider .review-slider__slide:nth-child(3) {
+  display: block;
+  @media ($tablet-width) {
+    display: flex;
+  }
+}
+.review__controls {
+  display: flex;
+  justify-content: center;
 
+  @media ($tablet-width) {
+
+  }
+}
+.review__controls label {
+  margin: 5px;
+  width: 12px;
+  height: 12px;
+  border: 3px solid $gray;
+  background-color: #b5b9be;
+  border-radius: 50%;
+  font-size: 0;
+}
+.review__controls:checked ~ label {
+  border-color: $darkblue;
+}
