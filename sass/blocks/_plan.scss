@@ -1,5 +1,6 @@
 .plan {
   width: 280px;
+  transition: transform .2s;
   background-color: $white;
   &:last-of-type .plan__option {
     border-right: 2px solid #e7e7e7;
