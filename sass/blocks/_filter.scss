@@ -8,21 +8,40 @@
   margin-top: 36px;
   @media ($tablet-width) {
     margin: 0;
+    //flex-direction: row;
+    //justify-content: flex-start;
   }
 
 }
-.filter__button-wrap {
+.filters__button-wrap {
   display: flex;
   justify-content: space-between;
   width: 210px;
   margin: 0 auto;
   @media ($tablet-width) {
     flex-direction: column;
+    justify-content: flex-start;
+    width: auto;
+    padding-left: 5px;
+  }
+  @media ($desktop-width) {
+    margin: 0;
+  }
+}
+.filters__button-wrap .filter__range {
+  display: none;
+  @media ($tablet-width) {
+    display: block;
+  }
+}
+.filter__button-wrap {
+  @media ($tablet-width) {
+    display: flex;
+    justify-content: space-between;
   }
 }
 .filter button {
   display: block;
-  margin: 0;
   padding: 0;
   background-color: $gray;
   width: 50px;
@@ -41,25 +60,52 @@
   }
 }
 .filter__color {
-
+  @media ($tablet-width) {
+    margin-top: 22px;
+  }
 }
 .filter__color svg {
+  fill: #b5b9be;
   @media ($tablet-width) {
     width: 25px;
     height: 25px;
     fill: $pink;
   }
 }
+.filter__bright {
+  @media ($tablet-width) {
+    margin-top: 22px;
+  }
+}
 .filter__bright svg {
+  fill: #b5b9be;
   @media ($tablet-width) {
     width: 20px;
     height: 20px;
     fill: $pink;
   }
 }
+.filter__range:not(:first-of-type) {
+  @media ($tablet-width) {
+    display: none;
+  }
+}
+.filter__color + .filter__range {
+  @media ($tablet-width) {
+    margin-top: 45px;
+  }
+}
+.filter__bright + .filter__range {
+  @media ($tablet-width) {
+    margin-top: 45px;
+  }
+}
 .filter__range {
   position: relative;
   margin-top: 34px;
+  @media ($tablet-width) {
+    margin-top: 22px;
+  }
 }
 .filter__scale {
   width: 240px;

@@ -8,6 +8,10 @@
     padding-bottom: 49px;
     margin-bottom: 0;
   }
+  @media ($desktop-width) {
+    max-width: 940px;
+    margin: 0 auto;
+  }
 }
 .upload__title {
   margin: 0;
@@ -68,6 +72,13 @@
     flex-direction: column;
     justify-content: space-between;
     width: 260px;
+    margin: 0 auto;
+  }
+  @media ($desktop-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 410px;
     margin: 0 auto;
   }
 

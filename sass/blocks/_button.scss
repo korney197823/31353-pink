@@ -59,6 +59,9 @@
     outline: none;
     color: $pink;
     border-color: $pink;
+    @media ($desktop-width) {
+      width: 186px;
+    }
     &:hover {
       background-color: $pink;
       color: $white;
@@ -75,6 +78,9 @@
     outline: none;
     border-color: #dddfe0;
     color: #e3e4e4;
+    @media ($desktop-width) {
+      width: 186px;
+    }
     &:hover {
       border-color: #b5b9be;
       color: #c4c6c8;
