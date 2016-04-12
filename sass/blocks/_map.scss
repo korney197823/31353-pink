@@ -2,7 +2,6 @@
   position: relative;
   height: 200px;
   background-color: $gray;
-  background-image: url("/img/bg-triangle-white-footer.svg");
   @media ($tablet-width) {
     height: 380px;
   }
@@ -10,12 +9,23 @@
     height: 500px;
   }
 }
-//.map:before {
-//  content: '';
-//  position: absolute;
-//  width: 320px;
-//  height: 35px;
-//  background-image: url("/img/bg-triangle-white.svg");
-//  background-repeat: no-repeat;
-//  z-index: 9999;
-//}
+.map:before {
+  content: '';
+  position: absolute;
+  width: 320px;
+  height: 35px;
+  top: 0;
+  left: 0;
+  background-image: url("/img/bg-triangle-white-footer.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  z-index: 9999;
+  @media ($tablet-width) {
+    width: 700px;
+    height: 75px;
+  }
+  @media ($desktop-width) {
+    width: 1200px;
+    height: 125px;
+  }
+}

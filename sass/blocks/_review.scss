@@ -14,9 +14,7 @@
   }
 }
 
-.review__input {
-  display: none;
-}
+
 #review1:checked ~ .review-slider .review-slider__slide:nth-child(1) {
   display: block;
   @media ($tablet-width) {
@@ -42,6 +40,9 @@
   @media ($tablet-width) {
 
   }
+}
+.review__input {
+  display: none;
 }
 .review__controls label {
   margin: 5px;
