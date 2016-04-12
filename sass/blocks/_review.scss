@@ -8,13 +8,19 @@
   @media ($desktop-width) {
     margin-bottom: 26px;
     padding-top: 186px;
-    background-image: url("/img/icon-quotes.svg");
+    background-image: url("../../img/icon-quotes.svg");
     background-repeat: no-repeat;
     background-position: 50% 22%;
   }
 }
 
-
+.review-slider__slide {
+  display: none;
+  @media ($tablet-width) {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
 #review1:checked ~ .review-slider .review-slider__slide:nth-child(1) {
   display: block;
   @media ($tablet-width) {
@@ -33,10 +39,12 @@
     display: flex;
   }
 }
+
+
 .review__controls {
   display: flex;
   justify-content: center;
-
+  cursor: pointer;
   @media ($tablet-width) {
 
   }

@@ -37,7 +37,7 @@
 }
 .input__control[type="tel"] {
   @media ($tablet-width) {
-    background-image: url("/img/icon-phone.svg");
+    background-image: url("../../img/icon-phone.svg");
     background-repeat: no-repeat;
     background-position: 95.5%;
   }
@@ -47,7 +47,7 @@
 }
 .input__control[type="email"] {
   @media ($tablet-width) {
-    background-image: url("/img/icon-mail.svg");
+    background-image: url("../../img/icon-mail.svg");
     background-repeat: no-repeat;
     background-position: 95.5%;
   }

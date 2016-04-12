@@ -4,43 +4,43 @@
   background-repeat: no-repeat;
   background-color: #2a3848;
   background-image:
-    url("/img/iphone-hand-mobile.png"),
-    url("/img/bg-back-mobile.jpg");
+    url("../../img/iphone-hand-mobile.png"),
+    url("../../img/bg-back-mobile.jpg");
   background-position:
     0 170px,
     0 0;
   background-size: auto, cover;
   @media #{$retina} {
     background-image:
-      url("/img/iphone-hand-mobile@2x.png"),
-      url("/img/bg-back-mobile@2x.jpg");
+      url("../../img/iphone-hand-mobile@2x.png"),
+      url("../../img/bg-back-mobile@2x.jpg");
 
   }
   @media ($tablet-width) {
     background-image:
-      url("/img/iphone-hand-tablet@1x.png"),
-      url("/img/bg-back-tablet@1x.jpg");
+      url("../../img/iphone-hand-tablet@1x.png"),
+      url("../../img/bg-back-tablet@1x.jpg");
     background-position:
       0 184px,
       0 0;
     @media #{$retina} {
         background-image:
-          url("/img/iphone-hand-tablet@2x.png"),
-          url("/img/bg-back-tablet@2x.jpg");
+          url("../../img/iphone-hand-tablet@2x.png"),
+          url("../../img/bg-back-tablet@2x.jpg");
 
       }
   }
   @media ($desktop-width) {
    // background-color: $white;
     background-image:
-      url("/img/iphone-hand-desktop@1x.png"),
-      url("/img/bg-back-desktop.jpg");
+      url("../../img/iphone-hand-desktop@1x.png"),
+      url("../../img/bg-back-desktop.jpg");
     background-position:
       147px 210px,
       0 0;
     @media #{$retina} {
       background-image:
-        url("/img/iphone-hand-desktop@2x.png");
+        url("../../img/iphone-hand-desktop@2x.png");
     }
   }
 }
@@ -48,15 +48,15 @@
   .page-header--simple {
     position: relative;
     background-color: #2a3848;
-    background-image:  url("/img/bg-back-mobile.jpg");
+    background-image:  url("../../img/bg-back-mobile.jpg");
     background-position: 0 0;
     @media #{$retina} {
-      background-image: url("/img/bg-back-mobile@2x.jpg");
+      background-image: url("../../img/bg-back-mobile@2x.jpg");
   }
   @media ($tablet-width) {
-    background-image: url("/img/bg-back-tablet@1x.jpg");
+    background-image: url("../../img/bg-back-tablet@1x.jpg");
     @media #{$retina} {
-      background-image: url("/img/bg-back-tablet@2x.jpg");
+      background-image: url("../../img/bg-back-tablet@2x.jpg");
     }
   }
   @media ($desktop-width) {

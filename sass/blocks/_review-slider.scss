@@ -1,12 +1,5 @@
 
-.review-slider__slide {
-  display: none;
-  @media ($tablet-width) {
-    //display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-  }
-}
+
 
 
 .review-slider__title {

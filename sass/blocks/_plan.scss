@@ -123,7 +123,7 @@
   }
   &--included {
     background-repeat: no-repeat;
-    background-image: url("/img/icon-yes-plan.svg");
+    background-image: url("../../img/icon-yes-plan.svg");
     background-position: 231px 25px;
     @media ($tablet-width) {
       background-position: 63px 19px;
@@ -134,7 +134,7 @@
   }
   &--not-included {
     background-repeat: no-repeat;
-    background-image: url("/img/icon-no.svg");
+    background-image: url("../../img/icon-no.svg");
     background-position: 230px 14px;
     @media ($tablet-width) {
       background-position: 63px 11px;
